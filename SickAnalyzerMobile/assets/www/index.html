@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.3.1.min.css" />
+
+<script type="text/javascript" src="jquery/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.mobile.utils.js"></script>
+
+
+<!---<script type="text/javascript" src="cordova.js"></script>--->
+
+
+<title>Sickness Analyzer Mobile</title>
+</head>
+<body>
+	<div id="home" data-role="page" data-fullscreen="true" data-theme="b">
+
+		<div data-role="header" data-theme="b">
+			<h1>Sickness Search</h1>
+		</div>
+
+		<div data-role="content" data-fullscreen="true">
+			<div data-role="fieldcontain">
+				<label for="search-basic">Search Sickness:</label><input type="text"
+					name="search" id="query" value="Cough" />
+			</div>
+
+
+			<div data-role="fieldcontain">
+				<a href="#result-list" data-role="button" data-icon="search"
+					id="search-btn">Search</a>
+			</div>
+
+			<div data-role="fieldcontain">
+				<a href="#result-list" id="fav" data-role="button" data-icon="home">Saved Items</a>
+			</div>
+		</div>
+		<div data-role="footer" data-theme="b">
+		<div data-role="navbar"  role="navigation">
+				<ul class="ui-grid-a">
+					<li class="ui-block-a">
+						<a href="#analyzer" data-theme="b" class="ui-state-persist uibtn ui-btn-up-a">
+							<span class="ui-btn-inner"><span class="ui-btntext">Analyze</span></span>
+						</a>
+					</li>
+					<li class="ui-block-b">
+						<a href="#about" data-theme="b" class="ui-btn-active ui-state-persist ui-btn ui-btn-upa">
+							<span class="ui-btn-inner"><span class="ui-btntext">About Us</span></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /navbar -->
+		</div>
+		<!-- /footer -->	
+		</div>
+	</div>
+	
+	<div id="result-list" data-role="page" data-fullscreen="true"
+		data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Home</a>
+			<h1>Results</h1>
+		</div>
+
+		<div data-role="content" data-fullscreen="true">
+			<ul id="resultList" data-role="listview">
+			</ul>
+		</div>
+		<div data-role="footer" data-theme="b" class="ui-grid-b">
+			<a href="#home" data-role="button" class="home-btn"
+				data-transition="slide" data-icon="search">Go to Search</a> 
+			<a href="#analyzer" data-role="button" class="home-btn" 
+				data-transition="slide" data-icon="grid">Go to Analyzer</a>
+		</div>
+	</div>
+	
+	<div id="analyzer" data-role="page" data-fullscreen="true"
+		data-theme="b">
+		<div data-role="header" data-theme="b">
+		<a href="#home" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Home</a>
+			<h1>Analyzer</h1>
+		</div>
+		
+		<div data-role="content" data-fullscreen="true" data-theme="c">
+			<form action="#" method="get">
+			<h5>Select Symptoms and Observations:<h5>
+			<div data-role="collapsible" data-collapsed="true">
+                <h3>Head</h3>
+                <fieldset data-role="controlgroup">
+                	<input type="radio" name="radio-head-1" id="radio-head-1" value="choice-1">
+                	<label for="radio-head-1">Headache</label>
+                	<input type="radio" name="radio-head-2" id="radio-head-2" value="choice-2">
+                	<label for="radio-head-2">Migraine</label>
+            </div>
+			<div data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Body
+                </h3>
+                <fieldset data-role="controlgroup">
+                	<input type="radio" name="radio-body-1" id="radio-body-1" value="choice-1">
+                	<label for="radio-body-1">Red Spots on Skin</label>
+                	<input type="radio" name="radio-body-2" id="radio-body-2" value="choice-2">
+                	<label for="radio-body-2">Yellowish skin</label>
+            </div>
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Hands
+                </h3>
+                                <fieldset data-role="controlgroup">
+                	<input type="radio" name="radio-hands-1" id="radio-hands-1" value="choice-1">
+                	<label for="radio-hands-1">Yellowish Hand</label>
+                	<input type="radio" name="radio-hands-2" id="radio-hands-2" value="choice-2">
+                	<label for="radio-hands-2">Cannot move hands</label>
+                
+            </div>
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Feet
+                </h3>
+                    <fieldset data-role="controlgroup">
+                	<input type="radio" name="radio-feet-1" id="radio-feet-1" value="choice-1">
+                	<label for="radio-feet-1">Black spot on feet</label>
+                	<input type="radio" name="radio-feet-2" id="radio-feet-2" value="choice-2">
+                	<label for="radio-feet-2">Cannot move feet</label>
+            </div>
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Emotion
+                </h3>
+                      <fieldset data-role="controlgroup">
+                	<input type="radio" name="radio-emotion-1" id="radio-emotion-1" value="choice-1">
+                	<label for="radio-emotion-1">Anxiety</label>
+                	<input type="radio" name="radio-emotion-2" id="radio-emotion-2" value="choice-2">
+                	<label for="radio-emotion-2">Vomiting</label>
+                
+            </div>
+            </form>
+        </div>
+		
+		<div data-role="fieldcontain">
+			<a href="#result-list" data-role="button" data-icon="grid" id="search-btn" data-theme="b">Analyze</a>
+		</div>	
+		
+		<div data-role="footer" data-theme="b" class="ui-grid-b">
+			<a href="#home" data-role="button" class="home-btn"
+				data-transition="slide" data-icon="search">Go to Search</a>
+			<a href="#about" data-role="button" class="home-btn" 
+			data-transition="slide" data-icon="info">Instructions</a>
+		</div>
+	</div>
+	
+	<div id="about" data-role="page" data-fullscreen="true"
+		data-theme="b">
+		<div data-role="header" data-theme="b">
+		<a href="#home" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Home</a>
+			<h1>About SAM</h1>
+		</div>
+
+		<div data-role="content" data-fullscreen="true">
+
+			<div class="ui-bar-c ui-corner-all ui-shadow"
+				style="padding: 1em; margin: 0 auto">
+			<div id="map_canvas" style="margin: 0 auto">
+			<p align="justify">Sickness Analyzer Mobile (SAM) is a mobile application that enables user determine the exact or the probable kind of disease  or sickness experienced by a patient. 
+			<li>To search for the symptoms and other information about a sickness, on the Search Page, just type the exact name of the disease and hit the Search button.</li>
+			<li>To determine the kind of disease experienced by a patient, just go to Analyzer Page, select the observation and symptoms seen in the patient, and hit the Analyze Button. </li>
+			</p> </div>
+			</div>      
+		</div>
+		<div data-role="footer" data-theme="b" class="ui-grid-b">
+			<a href="#home" data-role="button" class="home-btn"
+				data-transition="slide" data-icon="search">Go to Search</a>
+			<a href="#analyzer" data-role="button" class="home-btn" 
+				data-transition="slide" data-icon="grid">Go to Analyzer</a>
+		</div>
+	</div>
+	
+	<div id="details-page" data-role="page" data-fullscreen="true"
+		data-theme="c">
+		<div data-role="header" data-theme="b">
+			<a href="#result-list" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Information</h1>
+		</div>
+
+		<div data-role="content" data-fullscreen="true">
+			<div id="name"></div>
+			<div id="symptoms"></div>
+			<div id="todo"></div>			
+			<div id="firstaid"></div>
+
+			
+				<a href="" data-role="button" id="addFave">Save Item</a>
+				<a href="" data-role="button" id="removeFave">Remove Item</a>
+				<a href="#" data-role="button" id="item-site">Visit Link</a>
+
+		</div>
+		<div data-role="footer" data-theme="b" class="ui-grid-b">
+			<a href="#home" data-role="button" class="home-btn" 
+					data-transition="slide" data-icon="search">Go to Search</a> 
+			<a href="#analyzer" data-role="button" class="home-btn" 
+					data-transition="slide" data-icon="info">Go to Analyzer</a>
+	</div>
+</body>
+</html>
