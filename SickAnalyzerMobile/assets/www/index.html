@@ -26,29 +26,27 @@
 <script type="text/javascript" src="jquery/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="jquery/jquery.mobile-1.3.1.min.js"></script>
 <script type="text/javascript" src="jquery/jquery.mobile.utils.js"></script>
-
-
-<!---<script type="text/javascript" src="cordova.js"></script>--->
+<script type="text/javascript" src="cordova.js"></script>
 
 
 <title>Sickness Analyzer Mobile</title>
 </head>
 <body>
-	<div id="home1" data-role="page" data-fullscreen="true" data-theme="b">
+	<div id="home1" data-role="page" data-theme="b">
 
 		<div data-role="header" data-theme="a">
 			<center><font face="britannic bold" size="4" color="green">Sickness Analyzer<br> Mobile</font></center>
 		</div>
 
-		<div data-role="content" data-fullscreen="true">
+		<div data-role="content" >
 			<div data-role="fieldcontain">
-			   <center><img height="230" width="210" src="img/sam.png"></center>
+			   <center><img height="270" width="220" src="img/sam.png"></center>
 			</div>
 				
 
 			<div data-role="fieldcontain">
-				<a href="#home" data-role="button" data-icon="star"
-					id="search-btn">Continue</a>
+				<a href="#about" data-role="button" data-icon="star"
+					id="search-btn" data-transition="slide">Continue</a>
 			</div>
 
 			
@@ -57,58 +55,305 @@
 	
 	
 	
-	<div id="home" data-role="page" data-fullscreen="true" data-theme="b">
+	<div id="home" data-role="page" data-theme="b">
 
 		<div data-role="header" data-theme="b">
 			<h1>Sickness Search</h1>
 		</div>
 
-		<div data-role="content" data-fullscreen="true">
+		<div data-role="content" >
+			<h7>Search Sickness:</h7>
 			<div data-role="fieldcontain">
-				<label for="search-basic">Search Sickness:</label><input type="text"
-					name="search" id="query" value="Cough" />
+					<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search..." data-inset="true" data-clear-btn="true">	
+					<li><a href="#">Achondroplasia</a></li>
+					<li><a href="#">Acne</a></li>
+					<li><a href="#">AIDS</a></li>
+					<li><a href="#">Albinism</a></li>
+					<li><a href="#">Alcoholic hepatitis</a></li>
+					<li><a href="#">Allergy</a></li>
+					<li><a href="#">Alopecia</a></li>
+					<li><a href="#">Alzheimer's disease</a></li>
+					<li><a href="#">Amblyopia</a></li>
+					<li><a href="#">Amebiasis</a></li>
+					<li><a href="#">Anemia</a></li>
+					<li><a href="#">Aneurysm</a></li>
+					<li><a href="#">Anorexia</a></li>
+					<li><a href="#">Anosmia</a></li>
+					<li><a href="#">Anotia</a></li>
+					<li><a href="#">Anthrax</a></li>
+					<li><a href="#">Appendicitis</a></li>
+					<li><a href="#">Apraxia</a></li>
+					<li><a href="#">Argyria</a></li>
+					<li><a href="#">Arthritis</a></li>
+					<li><a href="#">Aseptic meningitis</a></li>
+					<li><a href="#">Asthenia</a></li>
+					<li><a href="#">Asthma</a></li>
+					<li><a href="#">Astigmatism</a></li>
+					<li><a href="#">Atherosclerosis</a></li>
+					<li><a href="#">Athetosis</a></li>
+					<li><a href="#">Atrophy</a></li>
+					<li><a href="#">Bacterial meningitis</a></li>
+					<li><a href="#">Beriberi</a></li>
+					<li><a href="#">Black Death</a></li>
+					<li><a href="#">Botulism</a></li>
+					<li><a href="#">Breast cancer</a></li>
+					<li><a href="#">Bronchitis</a></li>
+					<li><a href="#">Brucellosis</a></li>
+					<li><a href="#">Bubonic plague</a></li>
+					<li><a href="#">Bunion</a></li>
+					<li><a href="#">Calculi</a></li>
+					<li><a href="#">Campylobacter infection</a></li>
+					<li><a href="#">Cancer</a></li>
+					<li><a href="#">Candidiasis</a></li>
+					<li><a href="#">Carbon monoxide poisoning</a></li>
+					<li><a href="#">Celiacs disease</a></li>
+					<li><a href="#">Cerebral palsy</a></li>
+					<li><a href="#">Chagas disease</a></li>
+					<li><a href="#">Chalazion</a></li>
+					<li><a href="#">Chancroid</a></li>
+					<li><a href="#">Chavia</a></li>
+					<li><a href="#">Cherubism</a></li>
+					<li><a href="#">Chickenpox</a></li>
+					<li><a href="#">Chlamydia</a></li>
+					<li><a href="#">Chlamydia trachomatis</a></li>
+					<li><a href="#">Cholera</a></li>
+					<li><a href="#">Chordoma</a></li>
+					<li><a href="#">Chorea</a></li>
+					<li><a href="#">Chronic fatigue syndrome</a></li>
+					<li><a href="#">Circadian rhythm sleep disorder</a></li>
+					<li><a href="#">Coccidioidomycosis</a></li>
+					<li><a href="#">Colitis</a></li>
+					<li><a href="#">Common cold</a></li>
+					<li><a href="#">Condyloma</a></li>
+					<li><a href="#">Congestive heart disease</a></li>
+					<li><a href="#">Coronary heart disease</a></li>
+					<li><a href="#">Cowpox</a></li>
+					<li><a href="#">Cretinism</a></li>
+					<li><a href="#">Crohn's Disease</a></li>
+					<li><a href="#">Dengue</a></li>
+					<li><a href="#">Diabetes mellitus</a></li>
+					<li><a href="#">Diphtheria</a></li>
+					<li><a href="#">Dehydration</a></li>
+					<li><a href="#">Ear infection</a></li>
+					<li><a href="#">Ebola</a></li>
+					<li><a href="#">Encephalitis</a></li>
+					<li><a href="#">Emphysema</a></li>
+					<li><a href="#">Erectile dysfunction</a></li>
+					<li><a href="#">Foodborne illness</a></li>
+					<li><a href="#">Gangrene</a></li>
+					<li><a href="#">Gastroenteritis</a></li>
+					<li><a href="#">Genital herpes</a></li>
+					<li><a href="#">GERD</a></li>
+					<li><a href="#">Goitre</a></li>
+					<li><a href="#">Gonorrhea</a></li>
+					<li><a href="#">Heart disease</a></li>
+					<li><a href="#">Hepatitis A</a></li>
+					<li><a href="#">Hepatitis B</a></li>
+					<li><a href="#">Hepatitis C</a></li>
+					<li><a href="#">Hepatitis D</a></li>
+					<li><a href="#">Hepatitis E</a></li>
+					<li><a href="#">Histiocytosis (Childhood Cancer)</a></li>
+					<li><a href="#">HIV</a></li>
+					<li><a href="#">Human papillomavirus</a></li>
+					<li><a href="#">Huntington's disease</a></li>
+					<li><a href="#">Hypermetropia</a></li>
+					<li><a href="#">Hyperopia</a></li>
+					<li><a href="#">Hyperthyroidism</a></li>
+					<li><a href="#">Hypothermia</a></li>
+					<li><a href="#">Hypothyroid</a></li>
+					<li><a href="#">Hypotonia</a></li>
+					<li><a href="#">Impetigo</a></li>
+					<li><a href="#">Infertility</a></li>
+					<li><a href="#">Influenza</a></li>
+					<li><a href="#">Interstitial cystitis</a></li>
+					<li><a href="#">Iritis</a></li>
+					<li><a href="#">Iron-deficiency anemia</a></li>
+					<li><a href="#">Irritable bowel syndrome</a></li>
+					<li><a href="#">Ignious Syndrome</a></li>
+					<li><a href="#">Jaundice</a></li>
+					<li><a href="#">Keloids</a></li>
+					<li><a href="#">Kuru</a></li>
+					<li><a href="#">Kwashiorkor</a></li>
+					<li><a href="#">Laryngitis</a></li>
+					<li><a href="#">Lead poisoning</a></li>
+					<li><a href="#">Legionellosis</a></li>
+					<li><a href="#">Leishmaniasis</a></li>
+					<li><a href="#">Leprosy</a></li>
+					<li><a href="#">Leptospirosis</a></li>
+					<li><a href="#">Listeriosis</a></li>
+					<li><a href="#">Leukemia</a></li>
+					<li><a href="#">Lice</a></li>
+					<li><a href="#">Loiasis</a></li>
+					<li><a href="#">Lung cancer</a></li>
+					<li><a href="#">Lupus erythematosus</a></li>
+					<li><a href="#">Lyme disease</a></li>
+					<li><a href="#">Lymphogranuloma venereum</a></li>
+					<li><a href="#">Lymphoma</a></li>
+					<li><a href="#">Macular denegeration</a></li>
+					<li><a href="#">Malaria</a></li>
+					<li><a href="#">Marburg fever</a></li>
+					<li><a href="#">Measles</a></li>
+					<li><a href="#">Melanoma</a></li>
+					<li><a href="#">Melioidosis</a></li>
+					<li><a href="#">Metastatic cancer</a></li>
+					<li><a href="#">Ménière's disease</a></li>
+					<li><a href="#">Meningitis</a></li>
+					<li><a href="#">Migraine</a></li>
+					<li><a href="#">Mononucleosis</a></li>
+					<li><a href="#">Multiple myeloma</a></li>
+					<li><a href="#">Multiple sclerosis</a></li>
+					<li><a href="#">Mumps</a></li>
+					<li><a href="#">Muscular dystrophy</a></li>
+					<li><a href="#">Myasthenia gravis</a></li>
+					<li><a href="#">Myelitis</a></li>
+					<li><a href="#">Myoclonus</a></li>
+					<li><a href="#">Myopia</a></li>
+					<li><a href="#">Myxedema</a></li>
+					<li><a href="#">Morquio Syndrome</a></li>
+					<li><a href="#">Mattticular syndrome</a></li>
+					<li><a href="#">Neoplasm</a></li>
+					<li><a href="#">Non-gonococcal urethritis</a></li>
+					<li><a href="#">Necrotizing Fasciitis</a></li>
+					<li><a href="#">Night blindness</a></li>
+					<li><a href="#">Obesity</a></li>
+					<li><a href="#">Osteoarthritis</a></li>
+					<li><a href="#">Osteoporosis</a></li>
+					<li><a href="#">Otitis</a></li>
+					<li><a href="#">Palindromic rheumatism</a></li>
+					<li><a href="#">Paratyphoid fever</a></li>
+					<li><a href="#">Parkinson's disease</a></li>
+					<li><a href="#">Pelvic inflammatory disease</a></li>
+					<li><a href="#">Peritonitis</a></li>
+					<li><a href="#">Periodontal disease</a></li>
+					<li><a href="#">Pertussis</a></li>
+					<li><a href="#">Phenylketonuria</a></li>
+					<li><a href="#">Plague</a></li>
+					<li><a href="#">Poliomyelitis</a></li>
+					<li><a href="#">Porphyria</a></li>
+					<li><a href="#">Progeria</a></li>
+					<li><a href="#">Prostatitis</a></li>
+					<li><a href="#">Psittacosis</a></li>
+					<li><a href="#">Psoriasis</a></li>
+					<li><a href="#">Pubic lice</a></li>
+					<li><a href="#">Pulmonary embolism</a></li>
+					<li><a href="#">Pilia</a></li>
+					<li><a href="#">Q fever</a></li>
+					<li><a href="#">Ques fever</a></li>
+					<li><a href="#">Rabies</a></li>
+					<li><a href="#">Repetitive strain injury</a></li>
+					<li><a href="#">Rheumatic fever</a></li>
+					<li><a href="#">Rheumatic heart</a></li>
+					<li><a href="#">Rheumatism</a></li>
+					<li><a href="#">Rheumatoid arthritis</a></li>
+					<li><a href="#">Rickets</a></li>
+					<li><a href="#">Rift Valley fever</a></li>
+					<li><a href="#">Rocky Mountain spotted fever</a></li>
+					<li><a href="#">Rubella</a></li>
+					<li><a href="#">Salmonellosis</a></li>
+					<li><a href="#">Scabies</a></li>
+					<li><a href="#">Scarlet fever</a></li>
+					<li><a href="#">Sciatica</a></li>
+					<li><a href="#">Scleroderma</a></li>
+					<li><a href="#">Scrapie</a></li>
+					<li><a href="#">Scurvy</a></li>
+					<li><a href="#">Sepsis</a></li>
+					<li><a href="#">Septicemia</a></li>
+					<li><a href="#">SARS</a></li>
+					<li><a href="#">Shigellosis</a></li>
+					<li><a href="#">Shin splints</a></li>
+					<li><a href="#">Shingles</a></li>
+					<li><a href="#">Sickle-cell anemia</a></li>
+					<li><a href="#">Siderosis</a></li>
+					<li><a href="#">SIDS</a></li>
+					<li><a href="#">Silicosis</a></li>
+					<li><a href="#">Smallpox</a></li>
+					<li><a href="#">Stevens-Johnson syndrome</a></li>
+					<li><a href="#">Stomach flu</a></li>
+					<li><a href="#">Stomach ulcers</a></li>
+					<li><a href="#">Strabismus</a></li>
+					<li><a href="#">Strep throat</a></li>
+					<li><a href="#">Streptococcal infection</a></li>
+					<li><a href="#">Synovitis</a></li>
+					<li><a href="#">Syphilis</a></li>
+					<li><a href="#">Swine influenza</a></li>
+					<li><a href="#">Schizophrenia</a></li>
+					<li><a href="#">Taeniasis</a></li>
+					<li><a href="#">Tay-Sachs disease</a></li>
+					<li><a href="#">Tennis elbow</a></li>
+					<li><a href="#">Teratoma</a></li>
+					<li><a href="#">Tetanus</a></li>
+					<li><a href="#">Thalassaemia</a></li>
+					<li><a href="#">Thrush</a></li>
+					<li><a href="#">Thymoma</a></li>
+					<li><a href="#">Tinnitus</a></li>
+					<li><a href="#">Tonsillitis</a></li>
+					<li><a href="#">Tooth decay</a></li>
+					<li><a href="#">Toxic shock syndrome</a></li>
+					<li><a href="#">Trichinosis</a></li>
+					<li><a href="#">Trichomoniasis</a></li>
+					<li><a href="#">Trisomy</a></li>
+					<li><a href="#">Tuberculosis</a></li>
+					<li><a href="#">Tularemia</a></li>
+					<li><a href="#">Tungiasis</a></li>
+					<li><a href="#">Typhoid fever</a></li>
+					<li><a href="#">Typhus</a></li>
+					<li><a href="#">Tumor</a></li>
+					<li><a href="#">Ulcerative colitis</a></li>
+					<li><a href="#">Ulcers</a></li>
+					<li><a href="#">Uremia</a></li>
+					<li><a href="#">Urticaria</a></li>
+					<li><a href="#">Uveitis</a></li>
+					<li><a href="#">Varicella</a></li>
+					<li><a href="#">Varicose veins</a></li>
+					<li><a href="#">Vasovagal syncope</a></li>
+					<li><a href="#">Vitiligo</a></li>
+					<li><a href="#">Von Hippel-Lindau disease</a></li>
+					<li><a href="#">Viral fever</a></li>
+					<li><a href="#">Viral meningitis</a></li>
+					<li><a href="#">Warkany syndrome</a></li>
+					<li><a href="#">Warts</a></li>
+					<li><a href="#">Watkins</a></li>
+					<li><a href="#">Yellow fever</a></li>
+					<li><a href="#">Yersiniosis</a></li>
+
+		</ul>
+						
 			</div>
 
 
 			<div data-role="fieldcontain">
 				<a href="#result-list" data-role="button" data-icon="search"
-					id="search-btn">Search</a>
+					id="search-btn" data-transition="slide">Search</a>
 			</div>
 
 			<div data-role="fieldcontain">
-				<a href="#result-list" id="fav" data-role="button" data-icon="home">Saved Items</a>
+				<a href="#result-list" id="fav" data-role="button" data-icon="home" data-transition="slide">Saved Items</a>
 			</div>
+			<div>
+			 </div>
 		</div>
-		<div data-role="footer" data-theme="b">
-		<div data-role="navbar"  role="navigation">
-				<ul class="ui-grid-a">
-					<li class="ui-block-a">
-						<a href="#analyzer" data-theme="b" class="ui-state-persist uibtn ui-btn-up-a">
-							<span class="ui-btn-inner"><span class="ui-btntext">Analyze</span></span>
-						</a>
-					</li>
-					<li class="ui-block-b">
-						<a href="#about" data-theme="b" class="ui-btn-active ui-state-persist ui-btn ui-btn-upa">
-							<span class="ui-btn-inner"><span class="ui-btntext">About Us</span></span>
-						</a>
-					</li>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<div data-role="navbar"  role="navigation">
+				<ul>
+					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide">Analyze</a></li>
+					<li><a href="#search" data-theme="b" data-icon="search" class="ui-btn-active" data-transition="slide">Search</a></li>
+					<li><a href="#about" data-theme="b" data-icon="info" data-transition="slide">About Us</a></li>
 				</ul>
 			</div>
-			<!-- /navbar -->
 		</div>
-		<!-- /footer -->	
-		</div>
+			
+		
 	</div>
-	
-	<div id="result-list" data-role="page" data-fullscreen="true"
-		data-theme="b">
+
+
+	<div id="result-list" data-role="page" data-theme="b">
 		<div data-role="header" data-theme="b">
 			<a href="#home" data-role="button" data-icon="arrow-l"
-				class="home-btn" data-transition="slide">Home</a>
+				class="home-btn" data-transition="slide">Back</a>
 			<h1>Results</h1>
 		</div>
 
-		<div data-role="content" data-fullscreen="true">
+		<div data-role="content" >
 			<ul id="resultList" data-role="listview">
 			</ul>
 		</div>
@@ -120,134 +365,257 @@
 		</div>
 	</div>
 	
-	<div id="analyzer" data-role="page" data-fullscreen="true"
-		data-theme="b">
-		<div data-role="header" data-theme="b">
-		<a href="#home" data-role="button" data-icon="arrow-l"
-				class="home-btn" data-transition="slide">Home</a>
+<div id="analyzer" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b" data-position="fixed">
 			<h1>Analyzer</h1>
 		</div>
+
+<div data-role="content">			
+		<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="b" data-count-theme="b">
+		    <li data-role="list-divider">Select Signs and Symptoms</li>
+		    <li><a href="#behavior" data-transition="slide">Behavior <span class="ui-li-count">10</span></a></li>
+		    <li><a href="#body" data-transition="slide">Body <span class="ui-li-count">10</span></a></li>
+		    <li><a href="#condition" data-transition="slide">Conditions <span class="ui-li-count">10</span></a></li>
+		    <li><a href="#limbs" data-transition="slide">Limbs <span class="ui-li-count">10</span></a></li>
+		    <li><a href="#headface" data-transition="slide">Head and Face<span class="ui-li-count">10</span></a></li>
+		    <li><a href="#organs" data-transition="slide">Internal Organs <span class="ui-li-count">10</span></a></li>
+		    <li><a href="#skin" data-transition="slide">Skin <span class="ui-li-count">10</span></a></li>
+		</ul>
+		<a href="#result-list" data-role="button" data-icon="grid" data-theme="b">Analyze</a>
+	</div>
 		
-		<div data-role="content" data-fullscreen="true" data-theme="c">
-			<form action="#" method="get">
-			<h5>Select Symptoms and Observations:<h5>
-			<div data-role="collapsible" data-collapsed="true">
-                <h3>Head</h3>
-                <fieldset data-role="controlgroup">
-                	<input type="radio" name="radio-head-1" id="radio-head-1" value="choice-1">
-                	<label for="radio-head-1">Headache</label>
-                	<input type="radio" name="radio-head-2" id="radio-head-2" value="choice-2">
-                	<label for="radio-head-2">Migraine</label>
-            </div>
-			<div data-role="collapsible" data-collapsed="true">
-                <h3>
-                    Body
-                </h3>
-                <fieldset data-role="controlgroup">
-                	<input type="radio" name="radio-body-1" id="radio-body-1" value="choice-1">
-                	<label for="radio-body-1">Red Spots on Skin</label>
-                	<input type="radio" name="radio-body-2" id="radio-body-2" value="choice-2">
-                	<label for="radio-body-2">Yellowish skin</label>
-            </div>
-            <div data-role="collapsible" data-collapsed="true">
-                <h3>
-                    Hands
-                </h3>
-                                <fieldset data-role="controlgroup">
-                	<input type="radio" name="radio-hands-1" id="radio-hands-1" value="choice-1">
-                	<label for="radio-hands-1">Yellowish Hand</label>
-                	<input type="radio" name="radio-hands-2" id="radio-hands-2" value="choice-2">
-                	<label for="radio-hands-2">Cannot move hands</label>
-                
-            </div>
-            <div data-role="collapsible" data-collapsed="true">
-                <h3>
-                    Feet
-                </h3>
-                    <fieldset data-role="controlgroup">
-                	<input type="radio" name="radio-feet-1" id="radio-feet-1" value="choice-1">
-                	<label for="radio-feet-1">Black spot on feet</label>
-                	<input type="radio" name="radio-feet-2" id="radio-feet-2" value="choice-2">
-                	<label for="radio-feet-2">Cannot move feet</label>
-            </div>
-            <div data-role="collapsible" data-collapsed="true">
-                <h3>
-                    Emotion
-                </h3>
-                      <fieldset data-role="controlgroup">
-                	<input type="radio" name="radio-emotion-1" id="radio-emotion-1" value="choice-1">
-                	<label for="radio-emotion-1">Anxiety</label>
-                	<input type="radio" name="radio-emotion-2" id="radio-emotion-2" value="choice-2">
-                	<label for="radio-emotion-2">Vomiting</label>
-                
-            </div>
-            </form>
-        </div>
-		
-		<div data-role="fieldcontain">
-			<a href="#result-list" data-role="button" data-icon="grid" id="search-btn" data-theme="b">Analyze</a>
-		</div>	
-		
-		<div data-role="footer" data-theme="b" class="ui-grid-b">
-			<a href="#home" data-role="button" class="home-btn"
-				data-transition="slide" data-icon="search">Go to Search</a>
-			<a href="#about" data-role="button" class="home-btn" 
-			data-transition="slide" data-icon="info">Instructions</a>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<div data-role="navbar"  role="navigation">
+				<ul>
+					<li><a href="#analyzer" data-theme="b" data-icon="grid" class="ui-btn-active" data-transition="slide">Analyze</a></li>
+					<li><a href="#home" data-theme="b" data-icon="search" data-transition="slide">Search</a></li>
+					<li><a href="#about" data-theme="b" data-icon="info" data-transition="slide">About Us</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	
-	<div id="about" data-role="page" data-fullscreen="true"
-		data-theme="b">
+	<div id="behavior" data-role="page" data-theme="b">
 		<div data-role="header" data-theme="b">
-		<a href="#home" data-role="button" data-icon="arrow-l"
-				class="home-btn" data-transition="slide">Home</a>
+		<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Behavior</h1>
+		</div>
+			
+		<div data-role="content" data-theme="d">											
+			<form>										
+		    	<fieldset data-role="controlgroup">										
+			        <legend>Select Signs and Symtoms:</legend>										
+			<input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">anxious</label>										
+			<input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">aggressive</label>										
+			<input name="checkbox-v-2c" id="checkbox-v-2c" type="checkbox"><label for="checkbox-v-2c">speech problems </label>										
+			<input name="checkbox-v-2d" id="checkbox-v-2d" type="checkbox"><label for="checkbox-v-2d">wandering</label>										
+			<input name="checkbox-v-2e" id="checkbox-v-2e" type="checkbox"><label for="checkbox-v-2e">five</label>										
+			<input name="checkbox-v-2f" id="checkbox-v-2f" type="checkbox"><label for="checkbox-v-2f">six</label>										
+			<input name="checkbox-v-2g" id="checkbox-v-2g" type="checkbox"><label for="checkbox-v-2g">seven</label>										
+			<input name="checkbox-v-2h" id="checkbox-v-2h" type="checkbox"><label for="checkbox-v-2h">eight</label>										
+			<input name="checkbox-v-2i" id="checkbox-v-2i" type="checkbox"><label for="checkbox-v-2i">nine</label>										
+			<input name="checkbox-v-2j" id="checkbox-v-2j" type="checkbox"><label for="checkbox-v-2j">ten</label>										
+		    	</fieldset>										
+			</form>										
+		</div>
+	</div>
+	
+	<div id="body" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Body</h1>
+		</div>
+		
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+			        <legend>Select Signs and Symtoms:</legend>
+			<input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">abdominal cramps</label>
+			<input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">abdominal pain</label>
+			<input name="checkbox-v-2c" id="checkbox-v-2c" type="checkbox"><label for="checkbox-v-2c">bloody stools</label>
+			<input name="checkbox-v-2d" id="checkbox-v-2d" type="checkbox"><label for="checkbox-v-2d">burning sensation</label>
+			<input name="checkbox-v-2e" id="checkbox-v-2e" type="checkbox"><label for="checkbox-v-2e">pain</label>
+			<input name="checkbox-v-2f" id="checkbox-v-2f" type="checkbox"><label for="checkbox-v-2f">sweats</label>
+			<input name="checkbox-v-2g" id="checkbox-v-2g" type="checkbox"><label for="checkbox-v-2g">weakness</label>
+			<input name="checkbox-v-2h" id="checkbox-v-2h" type="checkbox"><label for="checkbox-v-2h">eight</label>
+			<input name="checkbox-v-2i" id="checkbox-v-2i" type="checkbox"><label for="checkbox-v-2i">nine</label>
+			<input name="checkbox-v-2j" id="checkbox-v-2j" type="checkbox"><label for="checkbox-v-2j">ten</label>
+		    	</fieldset>
+			</form>
+		</div>	
+		
+	</div>
+	
+	<div id="condition" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Conditions</h1>
+		</div>
+		<div data-role="content" data-theme="d">		
+			<form>	
+		    	<fieldset data-role="controlgroup">	
+			        <legend>Select Signs and Symtoms:</legend>	
+			<input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">aging</label>	
+			<input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">extreme sensitivity to cold </label>	
+			<input name="checkbox-v-2c" id="checkbox-v-2c" type="checkbox"><label for="checkbox-v-2c">fever</label>	
+			<input name="checkbox-v-2d" id="checkbox-v-2d" type="checkbox"><label for="checkbox-v-2d">homozygosity</label>	
+			<input name="checkbox-v-2e" id="checkbox-v-2e" type="checkbox"><label for="checkbox-v-2e">weight loss</label>	
+			<input name="checkbox-v-2f" id="checkbox-v-2f" type="checkbox"><label for="checkbox-v-2f">light sensitivity</label>	
+			<input name="checkbox-v-2g" id="checkbox-v-2g" type="checkbox"><label for="checkbox-v-2g">nausea</label>	
+			<input name="checkbox-v-2h" id="checkbox-v-2h" type="checkbox"><label for="checkbox-v-2h">vomiting</label>	
+			<input name="checkbox-v-2i" id="checkbox-v-2i" type="checkbox"><label for="checkbox-v-2i">nine</label>	
+			<input name="checkbox-v-2j" id="checkbox-v-2j" type="checkbox"><label for="checkbox-v-2j">ten</label>	
+		    	</fieldset>	
+			</form>	
+		</div>		
+		
+	</div>
+	
+	<div id="limbs" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Limbs</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+			        <legend>Select Signs and Symtoms:</legend>
+			<input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">numbness</label>
+			<input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">brittle nails</label>
+			<input name="checkbox-v-2c" id="checkbox-v-2c" type="checkbox"><label for="checkbox-v-2c">three</label>
+			<input name="checkbox-v-2d" id="checkbox-v-2d" type="checkbox"><label for="checkbox-v-2d">three</label>
+			<input name="checkbox-v-2e" id="checkbox-v-2e" type="checkbox"><label for="checkbox-v-2e">three</label>
+			<input name="checkbox-v-2f" id="checkbox-v-2f" type="checkbox"><label for="checkbox-v-2f">three</label>
+			<input name="checkbox-v-2g" id="checkbox-v-2g" type="checkbox"><label for="checkbox-v-2g">three</label>
+			<input name="checkbox-v-2h" id="checkbox-v-2h" type="checkbox"><label for="checkbox-v-2h">three</label>
+			<input name="checkbox-v-2i" id="checkbox-v-2i" type="checkbox"><label for="checkbox-v-2i">nine</label>
+			<input name="checkbox-v-2j" id="checkbox-v-2j" type="checkbox"><label for="checkbox-v-2j">ten</label>
+		    	</fieldset>
+			</form>
+		</div>	
+	</div>
+	
+	<div id="headface" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Head and Face</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+		<form>
+	    	<fieldset data-role="controlgroup">
+		        <legend>Select Signs and Symtoms:</legend>
+		<input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">astigmatism</label>
+		<input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">cataract</label>
+		<input name="checkbox-v-2c" id="checkbox-v-2c" type="checkbox"><label for="checkbox-v-2c">dry mouth</label>
+		<input name="checkbox-v-2d" id="checkbox-v-2d" type="checkbox"><label for="checkbox-v-2d">eyes do not work together</label>
+		<input name="checkbox-v-2e" id="checkbox-v-2e" type="checkbox"><label for="checkbox-v-2e">eyes that turn in or out</label>
+		<input name="checkbox-v-2f" id="checkbox-v-2f" type="checkbox"><label for="checkbox-v-2f">lightheadedness</label>
+		<input name="checkbox-v-2g" id="checkbox-v-2g" type="checkbox"><label for="checkbox-v-2g">pimples</label>
+		<input name="checkbox-v-2h" id="checkbox-v-2h" type="checkbox"><label for="checkbox-v-2h">rapid eye movements </label>
+		<input name="checkbox-v-2i" id="checkbox-v-2i" type="checkbox"><label for="checkbox-v-2i">sore tongue</label>
+		<input name="checkbox-v-2j" id="checkbox-v-2j" type="checkbox"><label for="checkbox-v-2j">vision problems</label>
+	    	</fieldset>
+		</form>
+	</div>
+	</div>
+	
+	<div id="organs" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Internal Organs</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+			        <legend>Select Signs and Symtoms:</legend>
+			<input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">low blood pressure</label>
+			<input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">rapid heart rate</label>
+			<input name="checkbox-v-2c" id="checkbox-v-2c" type="checkbox"><label for="checkbox-v-2c">three</label>
+			<input name="checkbox-v-2d" id="checkbox-v-2d" type="checkbox"><label for="checkbox-v-2d">three</label>
+			<input name="checkbox-v-2e" id="checkbox-v-2e" type="checkbox"><label for="checkbox-v-2e">three</label>
+			<input name="checkbox-v-2f" id="checkbox-v-2f" type="checkbox"><label for="checkbox-v-2f">three</label>
+			<input name="checkbox-v-2g" id="checkbox-v-2g" type="checkbox"><label for="checkbox-v-2g">three</label>
+			<input name="checkbox-v-2h" id="checkbox-v-2h" type="checkbox"><label for="checkbox-v-2h">three</label>
+			<input name="checkbox-v-2i" id="checkbox-v-2i" type="checkbox"><label for="checkbox-v-2i">three</label>
+			<input name="checkbox-v-2j" id="checkbox-v-2j" type="checkbox"><label for="checkbox-v-2j">three</label>
+		    	</fieldset>
+			</form>
+		</div>	
+		
+	</div>
+	
+	<div id="skin" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Skin</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+			        <legend>Select Signs and Symtoms:</legend>
+			<input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox"><label for="checkbox-v-2a">scarring</label>
+			<input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox"><label for="checkbox-v-2b">inflammatory papules</label>
+			<input name="checkbox-v-2c" id="checkbox-v-2c" type="checkbox"><label for="checkbox-v-2c">itchiness</label>
+			<input name="checkbox-v-2d" id="checkbox-v-2d" type="checkbox"><label for="checkbox-v-2d">jaundice</label>
+			<input name="checkbox-v-2e" id="checkbox-v-2e" type="checkbox"><label for="checkbox-v-2e">skin lesion</label>
+			<input name="checkbox-v-2f" id="checkbox-v-2f" type="checkbox"><label for="checkbox-v-2f">skin redness</label>
+			<input name="checkbox-v-2g" id="checkbox-v-2g" type="checkbox"><label for="checkbox-v-2g">very pale skin</label>
+			<input name="checkbox-v-2h" id="checkbox-v-2h" type="checkbox"><label for="checkbox-v-2h">three</label>
+			<input name="checkbox-v-2i" id="checkbox-v-2i" type="checkbox"><label for="checkbox-v-2i">three</label>
+			<input name="checkbox-v-2j" id="checkbox-v-2j" type="checkbox"><label for="checkbox-v-2j">three</label>
+		    	</fieldset>
+			</form>
+		</div>	
+	</div>
+	
+	<div id="about" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
 			<h1>About SAM</h1>
 		</div>
 
-		<div data-role="content" data-fullscreen="true">
-
-			<div class="ui-bar-c ui-corner-all ui-shadow"
-				style="padding: 1em; margin: 0 auto">
-			<div id="map_canvas" style="margin: 0 auto">
-			<p align="justify">Sickness Analyzer Mobile (SAM) is a mobile application that enables user determine the exact or the probable kind of disease  or sickness experienced by a patient. 
-			<li>To search for the symptoms and other information about a sickness, on the Search Page, just type the exact name of the disease and hit the Search button.</li>
-			<li>To determine the kind of disease experienced by a patient, just go to Analyzer Page, select the observation and symptoms seen in the patient, and hit the Analyze Button. </li>
-			</p> </div>
-			</div>      
-		</div>
-		<div data-role="footer" data-theme="b" class="ui-grid-b">
-			<a href="#home" data-role="button" class="home-btn"
-				data-transition="slide" data-icon="search">Go to Search</a>
-			<a href="#analyzer" data-role="button" class="home-btn" 
-				data-transition="slide" data-icon="grid">Go to Analyzer</a>
-		</div>
-	</div>
-	
-	<div id="details-page" data-role="page" data-fullscreen="true"
-		data-theme="c">
-		<div data-role="header" data-theme="b">
-			<a href="#result-list" data-role="button" data-icon="arrow-l"
-				class="home-btn" data-transition="slide">Back</a>
-			<h1>Information</h1>
-		</div>
-
-		<div data-role="content" data-fullscreen="true">
-			<div id="name"></div>
-			<div id="symptoms"></div>
-			<div id="todo"></div>			
-			<div id="firstaid"></div>
-
+		<div data-role="content" >
+		  <div data-role="collapsible-set" data-theme="b" data-content-theme="d">
+			<div data-role="collapsible">
+   				 <h3>Information</h3>
+				<p align="justify">Sickness Analyzer Mobile (SAM) is a mobile application that enables user determine the exact or the probable kind of disease  or sickness experienced by a patient. 
+				 </p>
+			</div>
 			
-				<a href="" data-role="button" id="addFave">Save Item</a>
-				<a href="" data-role="button" id="removeFave">Remove Item</a>
-				<a href="#" data-role="button" id="item-site">Visit Link</a>
-
+			<div data-role="collapsible">
+   				 <h3>Instructions</h3>
+   				 	<li>
+   				 		To search for the symptoms and other information about a sickness, on the Search Page, just type the exact name of the disease and hit the Search button.</li>
+						<li>To determine the kind of disease experienced by a patient, just go to Analyzer Page, select the observation and symptoms seen in the patient, and hit the Analyze Button.
+					</li>
+			</div>
+			<div data-role="collapsible">
+   				 <h3>Credits</h3>
+   				  <p><h7>
+   				  	  Mindanao State University<br>Iligan Institute of Technology<br>			
+          			  Andres Bonifacio Avenue, Tibanga<br>
+          			  Iligan City, 9200
+          		  </p></h7>
+          	</div>
+          </div>		  	  
+		
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<div data-role="navbar"  role="navigation">
+				<ul>
+					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide">Analyze</a></li>
+					<li><a href="#home" data-theme="b" data-icon="search" data-transition="slide">Search</a></li>
+					<li><a href="#about" data-theme="b" data-icon="info" class="ui-btn-active" data-transition="slide">About Us</a></li>
+				</ul>
+			</div>
 		</div>
-		<div data-role="footer" data-theme="b" class="ui-grid-b">
-			<a href="#home" data-role="button" class="home-btn" 
-					data-transition="slide" data-icon="search">Go to Search</a> 
-			<a href="#analyzer" data-role="button" class="home-btn" 
-					data-transition="slide" data-icon="info">Go to Analyzer</a>
 	</div>
+
 </body>
 </html>
+
