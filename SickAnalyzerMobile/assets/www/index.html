@@ -21,9 +21,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="format-detection" content="telephone=no" />
-<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.3.2.min.css" />
 <script type="text/javascript" src="jquery/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="jquery/jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.mobile-1.3.2.min.js"></script>
 <script type="text/javascript" src="jquery/jquery.mobile.utils.js"></script>
 <script type="text/javascript" src="app.js"></script> 
 <script type="text/javascript" src="cordova.js"></script>
@@ -65,7 +65,7 @@
 			
 			<div data-role="fieldcontain">
 				<label for="search-basic">Search Sickness:</label><input type="text"
-					name="search" id="query" value="AIDS" />
+					name="search" id="query" value="Cough" />
 			</div>
 
 			<div data-role="fieldcontain">
@@ -74,7 +74,7 @@
 			</div>
 
 			<div data-role="fieldcontain">
-				<a href="#result-list" id="savedItems" data-role="button" data-icon="home" data-transition="slide">Saved Items</a>
+				<a href="#result-list" id="fav" data-role="button" data-icon="home" data-transition="slide">Saved Items</a>
 			</div>
 
 		</div>
@@ -123,13 +123,13 @@
 <div data-role="content">			
 		<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="b" data-count-theme="b">
 		    <li data-role="list-divider">Select Signs and Symptoms</li>
-		    <li><a href="#behavior" data-transition="slide">Behavior <span class="ui-li-count">5</span></a></li>
-		    <li><a href="#body" data-transition="slide">Body <span class="ui-li-count">11</span></a></li>
-		    <li><a href="#condition" data-transition="slide">Conditions <span class="ui-li-count">17</span></a></li>
-		    <li><a href="#eyes" data-transition="slide">Eyes<span class="ui-li-count">10</span></a></li>
-		    <li><a href="#headface" data-transition="slide">Head and Face<span class="ui-li-count">11</span></a></li>
-		    <li><a href="#limbs" data-transition="slide">Limbs <span class="ui-li-count">4</span></a></li>
-		    <li><a href="#skin" data-transition="slide">Skin <span class="ui-li-count">9</span></a></li>
+		    <li><a href="#behavior" data-transition="slide">Behavior <span class="ui-li-count">7</span></a></li>
+		    <li><a href="#body" data-transition="slide">Body <span class="ui-li-count">12</span></a></li>
+		    <li><a href="#condition" data-transition="slide">Conditions <span class="ui-li-count">16</span></a></li>
+		    <li><a href="#eyes" data-transition="slide">Eyes<span class="ui-li-count">14</span></a></li>
+		    <li><a href="#headface" data-transition="slide">Head and Face<span class="ui-li-count">14</span></a></li>
+		    <li><a href="#limbs" data-transition="slide">Limbs <span class="ui-li-count">6</span></a></li>
+		    <li><a href="#skin" data-transition="slide">Skin <span class="ui-li-count">10</span></a></li>
 		</ul>
 		<a href="#result-list" data-role="button" data-icon="grid" data-theme="b" id="analyze-btn">Analyze</a>
 	</div>
@@ -156,11 +156,13 @@
 			<form>										
 		    	<fieldset data-role="controlgroup">										
 			        <legend>Select Signs and Symptoms:</legend>										
-						<input name="behavior1" id="behavior1" type="checkbox"><label for="behavior1">anxious and aggressive</label>
-						<input name="behavior2" id="behavior2" type="checkbox"><label for="behavior2">autism</label>
-						<input name="behavior3" id="behavior3" type="checkbox"><label for="behavior3">unconsciousness</label>
-						<input name="behavior4" id="behavior4" type="checkbox"><label for="behavior4">unorder movements</label>
-						<input name="behavior5" id="behavior5" type="checkbox"><label for="behavior5">wandering</label>
+					<input name="behavior1" id="behavior1" type="checkbox" value="anxious and aggressive"><label for="behavior1">anxious and aggressive</label>
+					<input name="behavior2" id="behavior2" type="checkbox" value="autism"><label for="behavior2">autism</label>
+					<input name="behavior3" id="behavior3" type="checkbox" value="depression"><label for="behavior3">depression</label>
+					<input name="behavior4" id="behavior4" type="checkbox" value="memory loss"><label for="behavior4">memory loss</label>
+					<input name="behavior5" id="behavior5" type="checkbox" value="unconsciousness"><label for="behavior5">unconsciousness</label>
+					<input name="behavior6" id="behavior6" type="checkbox" value="unorder movements"><label for="behavior6">unorder movements</label>
+					<input name="behavior7" id="behavior7" type="checkbox" value="wandering"><label for="behavior7">wandering</label>
 		    	</fieldset>										
 			</form>										
 		</div>
@@ -177,18 +179,18 @@
 			<form>
 		    	<fieldset data-role="controlgroup">
 			        <legend>Select Signs and Symptoms:</legend>
-						<input name="body1" id="body1" value="abdominal cramps" type="checkbox"><label for="body1">abdominal cramps</label>
-						<input name="body2" id="body2" type="checkbox"><label for="body2">abdominal pain</label>
-						<input name="body3" id="body3" type="checkbox"><label for="body3">bloody diarrhea</label>
-						<input name="body4" id="body4" type="checkbox"><label for="body4">bloody stools</label>
-						<input name="body5" id="body5" type="checkbox"><label for="body5">body pain</label>
-						<input name="body6" id="body6" type="checkbox"><label for="body6">burning sensation</label>
-						<input name="body7" id="body7" type="checkbox"><label for="body7">chest pain</label>
-						<input name="body8" id="body8" value="chills" type="checkbox"><label for="body8">chills</label>
-						<input name="body9" id="body9" type="checkbox"><label for="body9">diarrhea</label>
-						<input name="body10" id="body10" type="checkbox"><label for="body10">sweats</label>
-						<input name="body11" id="body11" value="weakness" type="checkbox"><label for="body11">weakness</label>
-
+					<input name="body1" id="body1" type="checkbox" value="abdominal cramps"><label for="body1">abdominal cramps</label>
+					<input name="body2" id="body2" type="checkbox" value="abdominal pain"><label for="body2">abdominal pain</label>
+					<input name="body3" id="body3" type="checkbox" value="bloody diarrhea"><label for="body3">bloody diarrhea</label>
+					<input name="body4" id="body4" type="checkbox" value="bloody stools"><label for="body4">bloody stools</label>
+					<input name="body5" id="body5" type="checkbox" value="body pain"><label for="body5">body pain</label>
+					<input name="body6" id="body6" type="checkbox" value="burning sensation"><label for="body6">burning sensation</label>
+					<input name="body7" id="body7" type="checkbox" value="chest pain"><label for="body7">chest pain</label>
+					<input name="body8" id="body8" type="checkbox" value="chills"><label for="body8">chills</label>
+					<input name="body9" id="body9" type="checkbox" value="diarrhea"><label for="body9">diarrhea</label>
+					<input name="body10" id="body10" type="checkbox" value="narrowing of arteries"><label for="body10">narrowing of arteries</label>
+					<input name="body11" id="body11" type="checkbox" value="sweats"><label for="body11">sweats</label>
+					<input name="body12" id="body12" type="checkbox" value="weakness"><label for="body12">weakness</label>
 		    	</fieldset>
 			</form>
 		</div>	
@@ -205,23 +207,22 @@
 			<form>	
 		    	<fieldset data-role="controlgroup">	
 			        <legend>Select Signs and Symptoms:</legend>	
-					<input name="condition1" id="condition1" type="checkbox"><label for="condition1">aging</label>
-					<input name="condition2" id="condition2" type="checkbox"><label for="condition2">communication problems</label>
-					<input name="condition3" id="condition3" type="checkbox"><label for="condition3">cough</label>
-					<input name="condition4" id="condition4" type="checkbox"><label for="condition4">difficulty in breathing</label>
-					<input name="condition5" id="condition5" type="checkbox"><label for="condition5">extreme sensitivity to cold</label>
-					<input name="condition6" id="condition6" value="fatigue" type="checkbox"><label for="condition6">fatigue</label>
-					<input name="condition7" id="condition7" type="checkbox"><label for="condition7">fever</label>
-					<input name="condition8" id="condition8" type="checkbox"><label for="condition8">homozygosity</label>
-					<input name="condition9" id="condition9" type="checkbox"><label for="condition9">inability to remember</label>
-					<input name="condition10" id="condition10" type="checkbox"><label for="condition10">light sensitivity</label>
-					<input name="condition11" id="condition11" type="checkbox"><label for="condition11">low blood pressure</label>
-					<input name="condition12" id="condition12" type="checkbox"><label for="condition12">nausea and vomiting</label>
-					<input name="condition13" id="condition13" type="checkbox"><label for="condition13">rapid heart rate</label>
-					<input name="condition14" id="condition14" value="sleeping difficulty" type="checkbox"><label for="condition14">sleeping difficulty</label>
-					<input name="condition15" id="condition15" type="checkbox"><label for="condition15">speech problems</label>
-					<input name="condition16" id="condition16" type="checkbox"><label for="condition16">thoracolumbar gibbus in infancy</label>
-					<input name="condition17" id="condition17" type="checkbox"><label for="condition17">weight loss</label>
+					<input name="condition1" id="condition1" type="checkbox" value="aging"><label for="condition1">aging</label>
+					<input name="condition2" id="condition2" type="checkbox" value="cough"><label for="condition2">cough</label>
+					<input name="condition3" id="condition3" type="checkbox" value="difficulty in breathing"><label for="condition3">difficulty in breathing</label>
+					<input name="condition4" id="condition4" type="checkbox" value="extreme sensitivity to cold"><label for="condition4">extreme sensitivity to cold</label>
+					<input name="condition5" id="condition5" type="checkbox" value="fatigue"><label for="condition5">fatigue</label>
+					<input name="condition6" id="condition6" type="checkbox" value="fever"><label for="condition6">fever</label>
+					<input name="condition7" id="condition7" type="checkbox" value="homozygosity"><label for="condition7">homozygosity</label>
+					<input name="condition8" id="condition8" type="checkbox" value="inability to remember"><label for="condition8">inability to remember</label>
+					<input name="condition9" id="condition9" type="checkbox" value="light sensitivity"><label for="condition9">light sensitivity</label>
+					<input name="condition10" id="condition10" type="checkbox" value="low blood pressure"><label for="condition10">low blood pressure</label>
+					<input name="condition11" id="condition11" type="checkbox" value="nausea and vomiting"><label for="condition11">nausea and vomiting</label>
+					<input name="condition12" id="condition12" type="checkbox" value="rapid heart rate"><label for="condition12">rapid heart rate</label>
+					<input name="condition13" id="condition13" type="checkbox" value="sleeping difficulty"><label for="condition13">sleeping difficulty</label>
+					<input name="condition14" id="condition14" type="checkbox" value="speech problems"><label for="condition14">speech problems</label>
+					<input name="condition15" id="condition15" type="checkbox" value="thoracolumbar gibbus in infancy"><label for="condition15">thoracolumbar gibbus in infancy</label>
+					<input name="condition16" id="condition16" type="checkbox" value="weight loss"><label for="condition16">weight loss</label>
 		    	</fieldset>	
 			</form>	
 		</div>		
@@ -238,10 +239,12 @@
 			<form>
 		    	<fieldset data-role="controlgroup">
 			        <legend>Select Signs and Symptoms:</legend>
-					<input name="limbs1" id="limbs1" type="checkbox"><label for="limbs1">brittle nails</label>
-					<input name="limbs2" id="limbs2" type="checkbox"><label for="limbs2">knee instability</label>
-					<input name="limbs3" id="limbs3" type="checkbox"><label for="limbs3">numbness</label>
-					<input name="limbs4" id="limbs4" type="checkbox"><label for="limbs4">sudden popping sound</label>
+					<input name="limbs1" id="limbs1" type="checkbox" value="brittle nails"><label for="limbs1">brittle nails</label>
+					<input name="limbs2" id="limbs2" type="checkbox" value="joint pain"><label for="limbs2">joint pain</label>
+					<input name="limbs3" id="limbs3" type="checkbox" value="knee instability"><label for="limbs3">knee instability</label>
+					<input name="limbs4" id="limbs4" type="checkbox" value="knee swelling"><label for="limbs4">knee swelling</label>
+					<input name="limbs5" id="limbs5" type="checkbox" value="numbness"><label for="limbs5">numbness</label>
+					<input name="limbs6" id="limbs6" type="checkbox" value="sudden popping sound"><label for="limbs6">sudden popping sound</label>
 		    	</fieldset>
 			</form>
 		</div>	
@@ -257,16 +260,21 @@
 		<form>
 	    	<fieldset data-role="controlgroup">
 		        <legend>Select Signs and Symptoms:</legend>
-					<input name="eyes1" id="eyes1" type="checkbox"><label for="eyes1">astigmatism</label>
-					<input name="eyes2" id="eyes2" type="checkbox"><label for="eyes2">blurred vision</label>
-					<input name="eyes3" id="eyes3" type="checkbox"><label for="eyes3">cataract</label>
-					<input name="eyes4" id="eyes4" type="checkbox"><label for="eyes4">eyes do not work together</label>
-					<input name="eyes5" id="eyes5" type="checkbox"><label for="eyes5">eyes that turn in or out</label>
-					<input name="eyes6" id="eyes6" type="checkbox"><label for="eyes6">nearsightedness</label>
-					<input name="eyes7" id="eyes7" type="checkbox"><label for="eyes7">photophobia</label>
-					<input name="eyes8" id="eyes8" type="checkbox"><label for="eyes8">rapid eye movements</label>
-					<input name="eyes9" id="eyes9" type="checkbox"><label for="eyes9">teary eyes</label>
-					<input name="eyes10" id="eyes10" type="checkbox"><label for="eyes10">vision problems</label>
+				<input name="eyes1" id="eyes1" type="checkbox" value="astigmatism"><label for="eyes1">astigmatism</label>
+				<input name="eyes2" id="eyes2" type="checkbox" value="blurred vision"><label for="eyes2">blurred vision</label>
+				<input name="eyes3" id="eyes3" type="checkbox" value="cataract"><label for="eyes3">cataract</label>
+				<input name="eyes4" id="eyes4" type="checkbox" value="crossed eyes"><label for="eyes4">crossed eyes</label>
+				<input name="eyes5" id="eyes5" type="checkbox" value="eyes do not work together"><label for="eyes5">eyes do not work together</label>
+				<input name="eyes6" id="eyes6" type="checkbox" value="eyes that turn in or out"><label for="eyes6">eyes that turn in or out</label>
+				<input name="eyes7" id="eyes7" type="checkbox" value="farsightedness"><label for="eyes7">farsightedness</label>
+				<input name="eyes8" id="eyes8" type="checkbox" value="nearsightedness"><label for="eyes8">nearsightedness</label>
+				<input name="eyes9" id="eyes9" type="checkbox" value="nearsightedness"><label for="eyes9">nearsightedness</label>
+				<input name="eyes10" id="eyes10" type="checkbox" value="photophobia"><label for="eyes10">photophobia</label>
+				<input name="eyes11" id="eyes11" type="checkbox" value="poor vision"><label for="eyes11">poor vision</label>
+				<input name="eyes12" id="eyes12" type="checkbox" value="rapid eye movements"><label for="eyes12">rapid eye movements</label>
+				<input name="eyes13" id="eyes13" type="checkbox" value="teary eyes"><label for="eyes13">teary eyes</label>
+				<input name="eyes14" id="eyes14" type="checkbox" value="vision problems"><label for="eyes14">vision problems</label>
+
 	    	</fieldset>
 		</form>
 	</div>
@@ -282,17 +290,20 @@
 			<form>
 		    	<fieldset data-role="controlgroup">
 			        <legend>Select Signs and Symptoms:</legend>
-				<input name="head1" id="head1" type="checkbox"><label for="head1">dry mouth</label>
-				<input name="head2" id="head2" type="checkbox"><label for="head2">facial discoloration</label>
-				<input name="head3" id="head3" type="checkbox"><label for="head3">jaundice</label>
-				<input name="head4" id="head4" type="checkbox"><label for="head4">lightheadedness</label>
-				<input name="head5" id="head5" type="checkbox"><label for="head5">nasal allergy</label>
-				<input name="head6" id="head6" type="checkbox"><label for="head6">nasal congestion</label>
-				<input name="head7" id="head7" type="checkbox"><label for="head7">pimples</label>
-				<input name="head8" id="head8" type="checkbox"><label for="head8">runny nose</label>
-				<input name="head9" id="head9" type="checkbox"><label for="head9">sinusitis</label>
-				<input name="head10" id="head10" type="checkbox"><label for="head10">sore throat</label>
-				<input name="head11" id="head11" type="checkbox"><label for="head11">sore tongue</label>
+					<input name="head1" id="head1" type="checkbox" value="dry mouth"><label for="head1">dry mouth</label>
+					<input name="head2" id="head2" type="checkbox" value="facial discoloration"><label for="head2">facial discoloration</label>
+					<input name="head3" id="head3" type="checkbox" value="hair loss"><label for="head3">hair loss</label>
+					<input name="head4" id="head4" type="checkbox" value="headache"><label for="head4">headache</label>
+					<input name="head5" id="head5" type="checkbox" value="jaundice"><label for="head5">jaundice</label>
+					<input name="head6" id="head6" type="checkbox" value="lightheadedness"><label for="head6">lightheadedness</label>
+					<input name="head7" id="head7" type="checkbox" value="loss of smell"><label for="head7">loss of smell</label>
+					<input name="head8" id="head8" type="checkbox" value="nasal allergy"><label for="head8">nasal allergy</label>
+					<input name="head9" id="head9" type="checkbox" value="nasal congestion"><label for="head9">nasal congestion</label>
+					<input name="head10" id="head10" type="checkbox" value="pimples"><label for="head10">pimples</label>
+					<input name="head11" id="head11" type="checkbox" value="runny nose"><label for="head11">runny nose</label>
+					<input name="head12" id="head12" type="checkbox" value="sinusitis"><label for="head12">sinusitis</label>
+					<input name="head13" id="head13" type="checkbox" value="sneezing"><label for="head13">sneezing</label>
+					<input name="head14" id="head14" type="checkbox" value="sore throat"><label for="head14">sore throat</label>
 			</form>
 		</div>	
 		
@@ -308,14 +319,16 @@
 			<form>
 		    	<fieldset data-role="controlgroup">
 			        <legend>Select Signs and Symptoms:</legend>
-					<input name="skin1" id="skin1" type="checkbox"><label for="skin1">cracked, flaking, peeling skin on feet</label>
-					<input name="skin2" id="skin2" type="checkbox"><label for="skin2">inflammatory papules</label>
-					<input name="skin3" id="skin3" type="checkbox"><label for="skin3">itchiness</label>
-					<input name="skin4" id="skin4" type="checkbox"><label for="skin4">scarring</label>
-					<input name="skin5" id="skin5" type="checkbox"><label for="skin5">skin lesion</label>
-					<input name="skin6" id="skin6" type="checkbox"><label for="skin6">skin rash</label>
-					<input name="skin7" id="skin7" type="checkbox"><label for="skin7">skin redness</label>
-					<input name="skin8" id="skin8" type="checkbox"><label for="skin8">very pale skin</label>
+					<input name="skin1" id="skin1" type="checkbox" value="inflammatory papules"><label for="skin1">inflammatory papules</label>
+					<input name="skin2" id="skin2" type="checkbox" value="itchiness"><label for="skin2">itchiness</label>
+					<input name="skin3" id="skin3" type="checkbox" value="itchy sore"><label for="skin3">itchy sore</label>
+					<input name="skin4" id="skin4" type="checkbox" value="peeling skin on feet"><label for="skin4">peeling skin on feet</label>
+					<input name="skin5" id="skin5" type="checkbox" value="scarring"><label for="skin5">scarring</label>
+					<input name="skin6" id="skin6" type="checkbox" value="skin lesion"><label for="skin6">skin lesion</label>
+					<input name="skin7" id="skin7" type="checkbox" value="skin rash"><label for="skin7">skin rash</label>
+					<input name="skin8" id="skin8" type="checkbox" value="skin redness"><label for="skin8">skin redness</label>
+					<input name="skin9" id="skin9" type="checkbox" value="swelling"><label for="skin9">swelling</label>
+					<input name="skin10" id="skin10" type="checkbox" value="very pale skin"><label for="skin10">very pale skin</label>
 		    	</fieldset>
 			</form>
 		</div>	
@@ -337,8 +350,8 @@
 			<div id="treatment"></div>
 			
 				<a href="" data-role="button" id="item-site">Visit Medical Page</a>
-				<a href="" data-role="button" id="addItem">Add Item</a>
-				<a href="" data-role="button" id="removeItem">Remove Item</a>
+				<a href="" data-role="button" id="addFave">Add Item</a>
+				<a href="" data-role="button" id="removeFave">Remove Item</a>
 				
 		</div>
 		
@@ -363,6 +376,7 @@
 			<div data-role="collapsible">
    				 <h3>Information</h3>
 				<p align="justify">Sickness Analyzer Mobile (SAM) is a mobile application that enables user determine the exact or the probable kind of disease  or sickness experienced by a patient. 
+				We encourage the user to visit the medical page link and get the full information about the disease(s). 
 				 </p>
 			</div>
 			
