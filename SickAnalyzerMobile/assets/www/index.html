@@ -117,21 +117,34 @@
 	
 <div id="analyzer" data-role="page" data-theme="b">
 		<div data-role="header" data-theme="b" data-position="fixed">
-			<h1>Analyzer</h1>
+			<h1>Main Analyzer</h1> 
+			<a href="#result-list" data-role="button" data-icon="grid" class="ui-btn-right" id="analyze-btn">Analyze</a> 
 		</div>
 
 <div data-role="content">			
 		<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="b" data-count-theme="b">
 		    <li data-role="list-divider">Select Signs and Symptoms</li>
-		    <li><a href="#behavior" data-transition="slide">Behavior <span class="ui-li-count">7</span></a></li>
-		    <li><a href="#body" data-transition="slide">Body <span class="ui-li-count">12</span></a></li>
-		    <li><a href="#condition" data-transition="slide">Conditions <span class="ui-li-count">16</span></a></li>
-		    <li><a href="#eyes" data-transition="slide">Eyes<span class="ui-li-count">14</span></a></li>
-		    <li><a href="#headface" data-transition="slide">Head and Face<span class="ui-li-count">14</span></a></li>
-		    <li><a href="#limbs" data-transition="slide">Limbs <span class="ui-li-count">6</span></a></li>
-		    <li><a href="#skin" data-transition="slide">Skin <span class="ui-li-count">10</span></a></li>
+		    <li><a href="#common" data-transition="slide">Common Symptoms <span class="ui-li-count">16</span></a></li>
+		    <li><a href="#pain" data-transition="slide">Pains <span class="ui-li-count">28</span></a></li>
+		    <li><a href="#blood" data-transition="slide">With Blood <span class="ui-li-count">7</span></a></li>
+		    <li><a href="#heart" data-transition="slide">Heart Related<span class="ui-li-count">11</span></a></li>
+		    <li><a href="#genito" data-transition="slide">Genitourinary<span class="ui-li-count">18</span></a></li>
+		    <li><a href="#eyes" data-transition="slide">Eyes <span class="ui-li-count">39</span></a></li>
+		    <li><a href="#breath" data-transition="slide">Respiratory <span class="ui-li-count">6</span></a></li>
+		    <li><a href="#breast" data-transition="slide">Breast Related<span class="ui-li-count">3</span></a></li>
+		    <li><a href="#headface" data-transition="slide">Head and Face<span class="ui-li-count">15</span></a></li>
+		    <li><a href="#skin" data-transition="slide">Skin Related <span class="ui-li-count">24</span></a></li>
+		    <li><a href="#muscle" data-transition="slide">Muscles and Bones <span class="ui-li-count">43</span></a></li>
+		    <li><a href="#mouth" data-transition="slide">Mouth and Throat <span class="ui-li-count">24</span></a></li>
+		    <li><a href="#stomach" data-transition="slide">Stomach Related <span class="ui-li-count">16</span></a></li>
+		    <li><a href="#body" data-transition="slide">Body Conditions<span class="ui-li-count">27</span></a></li>
+		    <li><a href="#earnose" data-transition="slide">Ears and Nose<span class="ui-li-count">13</span></a></li>
+		    <li><a href="#teeth" data-transition="slide">Teeth <span class="ui-li-count">8</span></a></li>
+		    <li><a href="#sleep" data-transition="slide">Sleep Related <span class="ui-li-count">8</span></a></li>
+		    <li><a href="#behavior" data-transition="slide">Behavior <span class="ui-li-count">8</span></a></li>
+		    <li><a href="#learning" data-transition="slide">Learning and Mental Conditions <span class="ui-li-count">20</span></a></li>				    
 		</ul>
-		<a href="#result-list" data-role="button" data-icon="grid" data-theme="b" id="analyze-btn">Analyze</a>
+		
 	</div>
 		
 		<div data-role="footer" data-theme="b" data-position="fixed">
@@ -145,106 +158,130 @@
 		</div>
 	</div>
 	
-	<div id="behavior" data-role="page" data-theme="b">
+	<div id="common" data-role="page" data-theme="b">
 		<div data-role="header" data-theme="b">
 		<a href="#analyzer" data-role="button" data-icon="arrow-l"
 				class="home-btn" data-transition="slide">Back</a>
-			<h1>Behavior</h1>
+			<h1>Common Symptoms</h1>
 		</div>
 			
 		<div data-role="content" data-theme="d">											
 			<form>										
 		    	<fieldset data-role="controlgroup">										
 			        <legend>Select Signs and Symptoms:</legend>										
-					<input name="behavior1" id="behavior1" type="checkbox" value="anxious and aggressive"><label for="behavior1">anxious and aggressive</label>
-					<input name="behavior2" id="behavior2" type="checkbox" value="autism"><label for="behavior2">autism</label>
-					<input name="behavior3" id="behavior3" type="checkbox" value="depression"><label for="behavior3">depression</label>
-					<input name="behavior4" id="behavior4" type="checkbox" value="memory loss"><label for="behavior4">memory loss</label>
-					<input name="behavior5" id="behavior5" type="checkbox" value="unconsciousness"><label for="behavior5">unconsciousness</label>
-					<input name="behavior6" id="behavior6" type="checkbox" value="unorder movements"><label for="behavior6">unorder movements</label>
-					<input name="behavior7" id="behavior7" type="checkbox" value="wandering"><label for="behavior7">wandering</label>
+						<input name="rank320" id="rank320" type="checkbox" value="breathing difficulty"><label for="rank320">breathing difficulty</label>
+						<input name="rank329" id="rank329" type="checkbox" value="chills"><label for="rank329">chills</label>
+						<input name="rank326" id="rank326" type="checkbox" value="cough"><label for="rank326">cough</label>
+						<input name="rank328" id="rank328" type="checkbox" value="diarrhea"><label for="rank328">diarrhea</label>
+						<input name="rank334" id="rank334" type="checkbox" value="fatigue"><label for="rank334">fatigue</label>
+						<input name="rank335" id="rank335" type="checkbox" value="fever"><label for="rank335">fever</label>
+						<input name="rank332" id="rank332" type="checkbox" value="headache"><label for="rank332">headache</label>
+						<input name="rank311" id="rank311" type="checkbox" value="high fever"><label for="rank311">high fever</label>
+						<input name="rank327" id="rank327" type="checkbox" value="itchiness"><label for="rank327">itchiness</label>
+						<input name="rank321" id="rank321" type="checkbox" value="loss of appetite"><label for="rank321">loss of appetite</label>
+						<input name="rank319" id="rank319" type="checkbox" value="malaise"><label for="rank319">malaise</label>
+						<input name="rank333" id="rank333" type="checkbox" value="nausea and vomiting"><label for="rank333">nausea and vomiting</label>
+						<input name="rank323" id="rank323" type="checkbox" value="numbness"><label for="rank323">numbness</label>
+						<input name="rank314" id="rank314" type="checkbox" value="sweats"><label for="rank314">sweats</label>
+						<input name="rank316" id="rank316" type="checkbox" value="swelling"><label for="rank316">swelling</label>
+						<input name="rank330" id="rank330" type="checkbox" value="weakness"><label for="rank330">weakness</label>
 		    	</fieldset>										
 			</form>										
 		</div>
 	</div>
 	
-	<div id="body" data-role="page" data-theme="b">
+	<div id="pain" data-role="page" data-theme="b">
 		<div data-role="header" data-theme="b">	
 			<a href="#analyzer" data-role="button" data-icon="arrow-l"
 				class="home-btn" data-transition="slide">Back</a>
-			<h1>Body</h1>
+			<h1>Kinds of Pain</h1>
 		</div>
 		
 		<div data-role="content" data-theme="d">	
 			<form>
 		    	<fieldset data-role="controlgroup">
 			        <legend>Select Signs and Symptoms:</legend>
-					<input name="body1" id="body1" type="checkbox" value="abdominal cramps"><label for="body1">abdominal cramps</label>
-					<input name="body2" id="body2" type="checkbox" value="abdominal pain"><label for="body2">abdominal pain</label>
-					<input name="body3" id="body3" type="checkbox" value="bloody diarrhea"><label for="body3">bloody diarrhea</label>
-					<input name="body4" id="body4" type="checkbox" value="bloody stools"><label for="body4">bloody stools</label>
-					<input name="body5" id="body5" type="checkbox" value="body pain"><label for="body5">body pain</label>
-					<input name="body6" id="body6" type="checkbox" value="burning sensation"><label for="body6">burning sensation</label>
-					<input name="body7" id="body7" type="checkbox" value="chest pain"><label for="body7">chest pain</label>
-					<input name="body8" id="body8" type="checkbox" value="chills"><label for="body8">chills</label>
-					<input name="body9" id="body9" type="checkbox" value="diarrhea"><label for="body9">diarrhea</label>
-					<input name="body10" id="body10" type="checkbox" value="narrowing of arteries"><label for="body10">narrowing of arteries</label>
-					<input name="body11" id="body11" type="checkbox" value="sweats"><label for="body11">sweats</label>
-					<input name="body12" id="body12" type="checkbox" value="weakness"><label for="body12">weakness</label>
+						<input name="rank331" id="rank331" type="checkbox" value="abdominal pain"><label for="rank331">abdominal pain</label>
+						<input name="rank182" id="rank182" type="checkbox" value="arm and leg pain"><label for="rank182">arm and leg pain</label>
+						<input name="rank315" id="rank315" type="checkbox" value="back pain"><label for="rank315">back pain</label>
+						<input name="rank317" id="rank317" type="checkbox" value="body pain"><label for="rank317">body pain</label>
+						<input name="rank269" id="rank269" type="checkbox" value="bone pain"><label for="rank269">bone pain</label>
+						<input name="rank015" id="rank015" type="checkbox" value="breast bone pain"><label for="rank015">breast bone pain</label>
+						<input name="rank017" id="rank017" type="checkbox" value="breast pain"><label for="rank017">breast pain</label>
+						<input name="rank019" id="rank019" type="checkbox" value="burning pain"><label for="rank019">burning pain</label>
+						<input name="rank312" id="rank312" type="checkbox" value="chest pain"><label for="rank312">chest pain</label>
+						<input name="rank247" id="rank247" type="checkbox" value="ear pain"><label for="rank247">ear pain</label>
+						<input name="rank032" id="rank032" type="checkbox" value="elbow pain"><label for="rank032">elbow pain</label>
+						<input name="rank279" id="rank279" type="checkbox" value="eye pain"><label for="rank279">eye pain</label>
+						<input name="rank200" id="rank200" type="checkbox" value="facial pain"><label for="rank200">facial pain</label>
+						<input name="rank054" id="rank054" type="checkbox" value="foot pain"><label for="rank054">foot pain</label>
+						<input name="rank211" id="rank211" type="checkbox" value="heel pain"><label for="rank211">heel pain</label>
+						<input name="rank069" id="rank069" type="checkbox" value="hip pain"><label for="rank069">hip pain</label>
+						<input name="rank322" id="rank322" type="checkbox" value="joint pain"><label for="rank322">joint pain</label>
+						<input name="rank095" id="rank095" type="checkbox" value="knee pain"><label for="rank095">knee pain</label>
+						<input name="rank099" id="rank099" type="checkbox" value="leg pain"><label for="rank099">leg pain</label>
+						<input name="rank325" id="rank325" type="checkbox" value="muscle pain"><label for="rank325">muscle pain</label>
+						<input name="rank274" id="rank274" type="checkbox" value="pain during intercourse"><label for="rank274">pain during intercourse</label>
+						<input name="rank119" id="rank119" type="checkbox" value="pain in genitals"><label for="rank119">pain in genitals</label>
+						<input name="rank293" id="rank293" type="checkbox" value="painful urination"><label for="rank293">painful urination</label>
+						<input name="rank275" id="rank275" type="checkbox" value="pelvic pain"><label for="rank275">pelvic pain</label>
+						<input name="rank133" id="rank133" type="checkbox" value="rectal pain"><label for="rank133">rectal pain</label>
+						<input name="rank141" id="rank141" type="checkbox" value="shoulder pain"><label for="rank141">shoulder pain</label>
+						<input name="rank231" id="rank231" type="checkbox" value="skin pain"><label for="rank231">skin pain</label>
+						<input name="rank159" id="rank159" type="checkbox" value="thigh pain"><label for="rank159">thigh pain</label>
+
 		    	</fieldset>
 			</form>
 		</div>	
 		
 	</div>
 	
-	<div id="condition" data-role="page" data-theme="b">
+	<div id="blood" data-role="page" data-theme="b">
 		<div data-role="header" data-theme="b">	
 			<a href="#analyzer" data-role="button" data-icon="arrow-l"
 				class="home-btn" data-transition="slide">Back</a>
-			<h1>Conditions</h1>
+			<h1>Blood Related</h1>
 		</div>
 		<div data-role="content" data-theme="d">		
 			<form>	
 		    	<fieldset data-role="controlgroup">	
 			        <legend>Select Signs and Symptoms:</legend>	
-					<input name="condition1" id="condition1" type="checkbox" value="aging"><label for="condition1">aging</label>
-					<input name="condition2" id="condition2" type="checkbox" value="cough"><label for="condition2">cough</label>
-					<input name="condition3" id="condition3" type="checkbox" value="difficulty in breathing"><label for="condition3">difficulty in breathing</label>
-					<input name="condition4" id="condition4" type="checkbox" value="extreme sensitivity to cold"><label for="condition4">extreme sensitivity to cold</label>
-					<input name="condition5" id="condition5" type="checkbox" value="fatigue"><label for="condition5">fatigue</label>
-					<input name="condition6" id="condition6" type="checkbox" value="fever"><label for="condition6">fever</label>
-					<input name="condition7" id="condition7" type="checkbox" value="homozygosity"><label for="condition7">homozygosity</label>
-					<input name="condition8" id="condition8" type="checkbox" value="inability to remember"><label for="condition8">inability to remember</label>
-					<input name="condition9" id="condition9" type="checkbox" value="light sensitivity"><label for="condition9">light sensitivity</label>
-					<input name="condition10" id="condition10" type="checkbox" value="low blood pressure"><label for="condition10">low blood pressure</label>
-					<input name="condition11" id="condition11" type="checkbox" value="nausea and vomiting"><label for="condition11">nausea and vomiting</label>
-					<input name="condition12" id="condition12" type="checkbox" value="rapid heart rate"><label for="condition12">rapid heart rate</label>
-					<input name="condition13" id="condition13" type="checkbox" value="sleeping difficulty"><label for="condition13">sleeping difficulty</label>
-					<input name="condition14" id="condition14" type="checkbox" value="speech problems"><label for="condition14">speech problems</label>
-					<input name="condition15" id="condition15" type="checkbox" value="thoracolumbar gibbus in infancy"><label for="condition15">thoracolumbar gibbus in infancy</label>
-					<input name="condition16" id="condition16" type="checkbox" value="weight loss"><label for="condition16">weight loss</label>
+						<input name="rank242" id="rank242" type="checkbox" value="bloody cough"><label for="rank242">bloody cough</label>
+						<input name="rank010" id="rank010" type="checkbox" value="bloody sputum"><label for="rank010">bloody sputum</label>
+						<input name="rank297" id="rank297" type="checkbox" value="bloody stools"><label for="rank297">bloody stools</label>
+						<input name="rank258" id="rank258" type="checkbox" value="bloody urine"><label for="rank258">bloody urine</label>
+						<input name="rank011" id="rank011" type="checkbox" value="bloody vomitting"><label for="rank011">bloody vomitting</label>
+						<input name="rank221" id="rank221" type="checkbox" value="low blood pressure"><label for="rank221">low blood pressure</label>
+						<input name="rank157" id="rank157" type="checkbox" value="temporary anemia"><label for="rank157">temporary anemia</label>
+
 		    	</fieldset>	
 			</form>	
 		</div>		
 		
 	</div>
 	
-	<div id="limbs" data-role="page" data-theme="b">
+	<div id="heart" data-role="page" data-theme="b">
 		<div data-role="header" data-theme="b">	
 			<a href="#analyzer" data-role="button" data-icon="arrow-l"
 				class="home-btn" data-transition="slide">Back</a>
-			<h1>Limbs</h1>
+			<h1>Heart Related</h1>
 		</div>
 		<div data-role="content" data-theme="d">	
 			<form>
 		    	<fieldset data-role="controlgroup">
 			        <legend>Select Signs and Symptoms:</legend>
-					<input name="limbs1" id="limbs1" type="checkbox" value="brittle nails"><label for="limbs1">brittle nails</label>
-					<input name="limbs2" id="limbs2" type="checkbox" value="joint pain"><label for="limbs2">joint pain</label>
-					<input name="limbs3" id="limbs3" type="checkbox" value="knee instability"><label for="limbs3">knee instability</label>
-					<input name="limbs4" id="limbs4" type="checkbox" value="knee swelling"><label for="limbs4">knee swelling</label>
-					<input name="limbs5" id="limbs5" type="checkbox" value="numbness"><label for="limbs5">numbness</label>
-					<input name="limbs6" id="limbs6" type="checkbox" value="sudden popping sound"><label for="limbs6">sudden popping sound</label>
+						<input name="rank195" id="rank195" type="checkbox" value="enlarged lymph nodes"><label for="rank195">enlarged lymph nodes</label>
+						<input name="rank065" id="rank065" type="checkbox" value="heart failure"><label for="rank065">heart failure</label>
+						<input name="rank210" id="rank210" type="checkbox" value="heartburn"><label for="rank210">heartburn</label>
+						<input name="rank214" id="rank214" type="checkbox" value="hypertension"><label for="rank214">hypertension</label>
+						<input name="rank089" id="rank089" type="checkbox" value="irregular hearbeat"><label for="rank089">irregular hearbeat</label>
+						<input name="rank216" id="rank216" type="checkbox" value="irregular heartbeat"><label for="rank216">irregular heartbeat</label>
+						<input name="rank224" id="rank224" type="checkbox" value="narrowing of arteries"><label for="rank224">narrowing of arteries</label>
+						<input name="rank303" id="rank303" type="checkbox" value="rapid heart rate"><label for="rank303">rapid heart rate</label>
+						<input name="rank154" id="rank154" type="checkbox" value="swollen lymph glands"><label for="rank154">swollen lymph glands</label>
+						<input name="rank284" id="rank284" type="checkbox" value="swollen lymph nodes"><label for="rank284">swollen lymph nodes</label>
+						<input name="rank239" id="rank239" type="checkbox" value="throbbing"><label for="rank239">throbbing</label>
+
 		    	</fieldset>
 			</form>
 		</div>	
@@ -260,20 +297,46 @@
 		<form>
 	    	<fieldset data-role="controlgroup">
 		        <legend>Select Signs and Symptoms:</legend>
-				<input name="eyes1" id="eyes1" type="checkbox" value="astigmatism"><label for="eyes1">astigmatism</label>
-				<input name="eyes2" id="eyes2" type="checkbox" value="blurred vision"><label for="eyes2">blurred vision</label>
-				<input name="eyes3" id="eyes3" type="checkbox" value="cataract"><label for="eyes3">cataract</label>
-				<input name="eyes4" id="eyes4" type="checkbox" value="crossed eyes"><label for="eyes4">crossed eyes</label>
-				<input name="eyes5" id="eyes5" type="checkbox" value="eyes do not work together"><label for="eyes5">eyes do not work together</label>
-				<input name="eyes6" id="eyes6" type="checkbox" value="eyes that turn in or out"><label for="eyes6">eyes that turn in or out</label>
-				<input name="eyes7" id="eyes7" type="checkbox" value="farsightedness"><label for="eyes7">farsightedness</label>
-				<input name="eyes8" id="eyes8" type="checkbox" value="nearsightedness"><label for="eyes8">nearsightedness</label>
-				<input name="eyes9" id="eyes9" type="checkbox" value="nearsightedness"><label for="eyes9">nearsightedness</label>
-				<input name="eyes10" id="eyes10" type="checkbox" value="photophobia"><label for="eyes10">photophobia</label>
-				<input name="eyes11" id="eyes11" type="checkbox" value="poor vision"><label for="eyes11">poor vision</label>
-				<input name="eyes12" id="eyes12" type="checkbox" value="rapid eye movements"><label for="eyes12">rapid eye movements</label>
-				<input name="eyes13" id="eyes13" type="checkbox" value="teary eyes"><label for="eyes13">teary eyes</label>
-				<input name="eyes14" id="eyes14" type="checkbox" value="vision problems"><label for="eyes14">vision problems</label>
+					<input name="rank006" id="rank006" type="checkbox" value="astigmatism"><label for="rank006">astigmatism</label>
+					<input name="rank184" id="rank184" type="checkbox" value="blind spots"><label for="rank184">blind spots</label>
+					<input name="rank009" id="rank009" type="checkbox" value="bloodshot eyes"><label for="rank009">bloodshot eyes</label>
+					<input name="rank310" id="rank310" type="checkbox" value="blurred vision"><label for="rank310">blurred vision</label>
+					<input name="rank185" id="rank185" type="checkbox" value="cataract"><label for="rank185">cataract</label>
+					<input name="rank187" id="rank187" type="checkbox" value="crossed eyes"><label for="rank187">crossed eyes</label>
+					<input name="rank260" id="rank260" type="checkbox" value="double vision"><label for="rank260">double vision</label>
+					<input name="rank028" id="rank028" type="checkbox" value="drooping of the eyelid "><label for="rank028">drooping of the eyelid </label>
+					<input name="rank039" id="rank039" type="checkbox" value="eye enlargement"><label for="rank039">eye enlargement</label>
+					<input name="rank248" id="rank248" type="checkbox" value="eye redness"><label for="rank248">eye redness</label>
+					<input name="rank197" id="rank197" type="checkbox" value="eye strain"><label for="rank197">eye strain</label>
+					<input name="rank040" id="rank040" type="checkbox" value="eye swelling"><label for="rank040">eye swelling</label>
+					<input name="rank041" id="rank041" type="checkbox" value="eyebrows and eyelashes loss"><label for="rank041">eyebrows and eyelashes loss</label>
+					<input name="rank198" id="rank198" type="checkbox" value="eyelid drooping"><label for="rank198">eyelid drooping</label>
+					<input name="rank042" id="rank042" type="checkbox" value="eyelid lump"><label for="rank042">eyelid lump</label>
+					<input name="rank043" id="rank043" type="checkbox" value="eyelid narrowing"><label for="rank043">eyelid narrowing</label>
+					<input name="rank044" id="rank044" type="checkbox" value="eyelid spot"><label for="rank044">eyelid spot</label>
+					<input name="rank045" id="rank045" type="checkbox" value="eyes do not work together"><label for="rank045">eyes do not work together</label>
+					<input name="rank046" id="rank046" type="checkbox" value="eyes gaze downward"><label for="rank046">eyes gaze downward</label>
+					<input name="rank047" id="rank047" type="checkbox" value="eyes that turn in or out"><label for="rank047">eyes that turn in or out</label>
+					<input name="rank202" id="rank202" type="checkbox" value="farsightedness"><label for="rank202">farsightedness</label>
+					<input name="rank061" id="rank061" type="checkbox" value="gritty feeling in the eyes"><label for="rank061">gritty feeling in the eyes</label>
+					<input name="rank078" id="rank078" type="checkbox" value="inconsistent tears"><label for="rank078">inconsistent tears</label>
+					<input name="rank088" id="rank088" type="checkbox" value="iris discoloration"><label for="rank088">iris discoloration</label>
+					<input name="rank302" id="rank302" type="checkbox" value="light sensitivity"><label for="rank302">light sensitivity</label>
+					<input name="rank225" id="rank225" type="checkbox" value="nearsightedness"><label for="rank225">nearsightedness</label>
+					<input name="rank124" id="rank124" type="checkbox" value="pink-eyes"><label for="rank124">pink-eyes</label>
+					<input name="rank127" id="rank127" type="checkbox" value="poor vision"><label for="rank127">poor vision</label>
+					<input name="rank131" id="rank131" type="checkbox" value="rapid eye movements"><label for="rank131">rapid eye movements</label>
+					<input name="rank228" id="rank228" type="checkbox" value="seeing wavy lines"><label for="rank228">seeing wavy lines</label>
+					<input name="rank142" id="rank142" type="checkbox" value="sinking in of the eyeball "><label for="rank142">sinking in of the eyeball </label>
+					<input name="rank145" id="rank145" type="checkbox" value="small eyes"><label for="rank145">small eyes</label>
+					<input name="rank267" id="rank267" type="checkbox" value="teary eyes"><label for="rank267">teary eyes</label>
+					<input name="rank241" id="rank241" type="checkbox" value="trouble seeing at night"><label for="rank241">trouble seeing at night</label>
+					<input name="rank165" id="rank165" type="checkbox" value="tunnel vision"><label for="rank165">tunnel vision</label>
+					<input name="rank305" id="rank305" type="checkbox" value="vision problems"><label for="rank305">vision problems</label>
+					<input name="rank172" id="rank172" type="checkbox" value="watery build-up on the eye"><label for="rank172">watery build-up on the eye</label>
+					<input name="rank176" id="rank176" type="checkbox" value="widely spaced eyes"><label for="rank176">widely spaced eyes</label>
+					<input name="rank177" id="rank177" type="checkbox" value="yellow eyes"><label for="rank177">yellow eyes</label>
+
 
 	    	</fieldset>
 		</form>
@@ -290,20 +353,22 @@
 			<form>
 		    	<fieldset data-role="controlgroup">
 			        <legend>Select Signs and Symptoms:</legend>
-					<input name="head1" id="head1" type="checkbox" value="dry mouth"><label for="head1">dry mouth</label>
-					<input name="head2" id="head2" type="checkbox" value="facial discoloration"><label for="head2">facial discoloration</label>
-					<input name="head3" id="head3" type="checkbox" value="hair loss"><label for="head3">hair loss</label>
-					<input name="head4" id="head4" type="checkbox" value="headache"><label for="head4">headache</label>
-					<input name="head5" id="head5" type="checkbox" value="jaundice"><label for="head5">jaundice</label>
-					<input name="head6" id="head6" type="checkbox" value="lightheadedness"><label for="head6">lightheadedness</label>
-					<input name="head7" id="head7" type="checkbox" value="loss of smell"><label for="head7">loss of smell</label>
-					<input name="head8" id="head8" type="checkbox" value="nasal allergy"><label for="head8">nasal allergy</label>
-					<input name="head9" id="head9" type="checkbox" value="nasal congestion"><label for="head9">nasal congestion</label>
-					<input name="head10" id="head10" type="checkbox" value="pimples"><label for="head10">pimples</label>
-					<input name="head11" id="head11" type="checkbox" value="runny nose"><label for="head11">runny nose</label>
-					<input name="head12" id="head12" type="checkbox" value="sinusitis"><label for="head12">sinusitis</label>
-					<input name="head13" id="head13" type="checkbox" value="sneezing"><label for="head13">sneezing</label>
-					<input name="head14" id="head14" type="checkbox" value="sore throat"><label for="head14">sore throat</label>
+					<input name="rank008" id="rank008" type="checkbox" value="blackheads"><label for="rank008">blackheads</label>
+					<input name="rank024" id="rank024" type="checkbox" value="cleft palate"><label for="rank024">cleft palate</label>
+					<input name="rank277" id="rank277" type="checkbox" value="coarse facial features"><label for="rank277">coarse facial features</label>
+					<input name="rank194" id="rank194" type="checkbox" value="dry hair"><label for="rank194">dry hair</label>
+					<input name="rank199" id="rank199" type="checkbox" value="facial discoloration"><label for="rank199">facial discoloration</label>
+					<input name="rank049" id="rank049" type="checkbox" value="feeling of spinning"><label for="rank049">feeling of spinning</label>
+					<input name="rank053" id="rank053" type="checkbox" value="flat facial features"><label for="rank053">flat facial features</label>
+					<input name="rank062" id="rank062" type="checkbox" value="hair color changes"><label for="rank062">hair color changes</label>
+					<input name="rank263" id="rank263" type="checkbox" value="hair loss"><label for="rank263">hair loss</label>
+					<input name="rank218" id="rank218" type="checkbox" value="large head"><label for="rank218">large head</label>
+					<input name="rank123" id="rank123" type="checkbox" value="pimples"><label for="rank123">pimples</label>
+					<input name="rank126" id="rank126" type="checkbox" value="poor head control"><label for="rank126">poor head control</label>
+					<input name="rank129" id="rank129" type="checkbox" value="prominent forehead"><label for="rank129">prominent forehead</label>
+					<input name="rank137" id="rank137" type="checkbox" value="scalp flakes"><label for="rank137">scalp flakes</label>
+					<input name="rank138" id="rank138" type="checkbox" value="scaphocephaly"><label for="rank138">scaphocephaly</label>
+
 			</form>
 		</div>	
 		
@@ -319,21 +384,404 @@
 			<form>
 		    	<fieldset data-role="controlgroup">
 			        <legend>Select Signs and Symptoms:</legend>
-					<input name="skin1" id="skin1" type="checkbox" value="inflammatory papules"><label for="skin1">inflammatory papules</label>
-					<input name="skin2" id="skin2" type="checkbox" value="itchiness"><label for="skin2">itchiness</label>
-					<input name="skin3" id="skin3" type="checkbox" value="itchy sore"><label for="skin3">itchy sore</label>
-					<input name="skin4" id="skin4" type="checkbox" value="peeling skin on feet"><label for="skin4">peeling skin on feet</label>
-					<input name="skin5" id="skin5" type="checkbox" value="scarring"><label for="skin5">scarring</label>
-					<input name="skin6" id="skin6" type="checkbox" value="skin lesion"><label for="skin6">skin lesion</label>
-					<input name="skin7" id="skin7" type="checkbox" value="skin rash"><label for="skin7">skin rash</label>
-					<input name="skin8" id="skin8" type="checkbox" value="skin redness"><label for="skin8">skin redness</label>
-					<input name="skin9" id="skin9" type="checkbox" value="swelling"><label for="skin9">swelling</label>
-					<input name="skin10" id="skin10" type="checkbox" value="very pale skin"><label for="skin10">very pale skin</label>
+					<input name="rank296" id="rank296" type="checkbox" value="bleeding"><label for="rank296">bleeding</label>
+					<input name="rank309" id="rank309" type="checkbox" value="blisters"><label for="rank309">blisters</label>
+					<input name="rank013" id="rank013" type="checkbox" value="bluish skin"><label for="rank013">bluish skin</label>
+					<input name="rank020" id="rank020" type="checkbox" value="calluses"><label for="rank020">calluses</label>
+					<input name="rank190" id="rank190" type="checkbox" value="discoloration of skin"><label for="rank190">discoloration of skin</label>
+					<input name="rank246" id="rank246" type="checkbox" value="dry skin"><label for="rank246">dry skin</label>
+					<input name="rank052" id="rank052" type="checkbox" value="flakes on skin"><label for="rank052">flakes on skin</label>
+					<input name="rank085" id="rank085" type="checkbox" value="inflammatory papules"><label for="rank085">inflammatory papules</label>
+					<input name="rank091" id="rank091" type="checkbox" value="itchy sore"><label for="rank091">itchy sore</label>
+					<input name="rank301" id="rank301" type="checkbox" value="jaundice"><label for="rank301">jaundice</label>
+					<input name="rank101" id="rank101" type="checkbox" value="line marks on skin"><label for="rank101">line marks on skin</label>
+					<input name="rank281" id="rank281" type="checkbox" value="lumps"><label for="rank281">lumps</label>
+					<input name="rank307" id="rank307" type="checkbox" value="paleness"><label for="rank307">paleness</label>
+					<input name="rank122" id="rank122" type="checkbox" value="peeling on foot"><label for="rank122">peeling on foot</label>
+					<input name="rank130" id="rank130" type="checkbox" value="pustules"><label for="rank130">pustules</label>
+					<input name="rank254" id="rank254" type="checkbox" value="red spots on skin"><label for="rank254">red spots on skin</label>
+					<input name="rank255" id="rank255" type="checkbox" value="scarring"><label for="rank255">scarring</label>
+					<input name="rank143" id="rank143" type="checkbox" value="skin inflammation"><label for="rank143">skin inflammation</label>
+					<input name="rank283" id="rank283" type="checkbox" value="skin lesion"><label for="rank283">skin lesion</label>
+					<input name="rank324" id="rank324" type="checkbox" value="skin rash"><label for="rank324">skin rash</label>
+					<input name="rank295" id="rank295" type="checkbox" value="skin redness"><label for="rank295">skin redness</label>
+					<input name="rank304" id="rank304" type="checkbox" value="skin sores"><label for="rank304">skin sores</label>
+					<input name="rank168" id="rank168" type="checkbox" value="unusual growth on skin"><label for="rank168">unusual growth on skin</label>
+					<input name="rank175" id="rank175" type="checkbox" value="white patches on skin"><label for="rank175">white patches on skin</label>
+
 		    	</fieldset>
 			</form>
 		</div>	
 	</div>
 	
+	<div id="genito" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Genitourinary</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+			        <legend>Select Signs and Symptoms:</legend>
+					<input name="rank268" id="rank268" type="checkbox" value="abnormal genital discharge"><label for="rank268">abnormal genital discharge</label>
+					<input name="rank003" id="rank003" type="checkbox" value="abnormal vaginal bleeding"><label for="rank003">abnormal vaginal bleeding</label>
+					<input name="rank271" id="rank271" type="checkbox" value="dark urine"><label for="rank271">dark urine</label>
+					<input name="rank189" id="rank189" type="checkbox" value="difficulty in urinating"><label for="rank189">difficulty in urinating</label>
+					<input name="rank035" id="rank035" type="checkbox" value="erection trouble"><label for="rank035">erection trouble</label>
+					<input name="rank056" id="rank056" type="checkbox" value="foul-smelling discharge"><label for="rank056">foul-smelling discharge</label>
+					<input name="rank300" id="rank300" type="checkbox" value="frequent urination"><label for="rank300">frequent urination</label>
+					<input name="rank058" id="rank058" type="checkbox" value="genital odor"><label for="rank058">genital odor</label>
+					<input name="rank249" id="rank249" type="checkbox" value="genital redness"><label for="rank249">genital redness</label>
+					<input name="rank208" id="rank208" type="checkbox" value="genital sores"><label for="rank208">genital sores</label>
+					<input name="rank067" id="rank067" type="checkbox" value="heavy menstrual bleeding"><label for="rank067">heavy menstrual bleeding</label>
+					<input name="rank072" id="rank072" type="checkbox" value="impotence"><label for="rank072">impotence</label>
+					<input name="rank074" id="rank074" type="checkbox" value="inability to become pregnant"><label for="rank074">inability to become pregnant</label>
+					<input name="rank079" id="rank079" type="checkbox" value="incontinence"><label for="rank079">incontinence</label>
+					<input name="rank090" id="rank090" type="checkbox" value="irregular menstrual cycle"><label for="rank090">irregular menstrual cycle</label>
+					<input name="rank227" id="rank227" type="checkbox" value="premature birth"><label for="rank227">premature birth</label>
+					<input name="rank128" id="rank128" type="checkbox" value="premature ejaculation"><label for="rank128">premature ejaculation</label>
+					<input name="rank153" id="rank153" type="checkbox" value="swellling on genitals"><label for="rank153">swellling on genitals</label>
+			   </fieldset>
+			</form>
+		</div>	
+	</div>
+	
+	<div id="breath" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Respiratory</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+			        <legend>Select Signs and Symptoms:</legend>
+						<input name="rank306" id="rank306" type="checkbox" value="breath shortness"><label for="rank306">breath shortness</label>
+						<input name="rank272" id="rank272" type="checkbox" value="dry cough"><label for="rank272">dry cough</label>
+						<input name="rank036" id="rank036" type="checkbox" value="excess mucus"><label for="rank036">excess mucus</label>
+						<input name="rank084" id="rank084" type="checkbox" value="inflamed mucus membranes"><label for="rank084">inflamed mucus membranes</label>
+						<input name="rank117" id="rank117" type="checkbox" value="noisy breathing"><label for="rank117">noisy breathing</label>
+						<input name="rank174" id="rank174" type="checkbox" value="wheezing"><label for="rank174">wheezing</label>
+			        	</fieldset>
+					</form>
+				</div>	
+			</div>
+	
+	<div id="breast" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Breast Related</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+			        <legend>Select Signs and Symptoms:</legend>
+					<input name="rank016" id="rank016" type="checkbox" value="breast lump"><label for="rank016">breast lump</label>
+					<input name="rank022" id="rank022" type="checkbox" value="change in breast feeling"><label for="rank022">change in breast feeling</label>
+					<input name="rank116" id="rank116" type="checkbox" value="nipple fluids"><label for="rank116">nipple fluids</label>
+					</fieldset>
+					</form>
+				</div>	
+			</div>
+	
+	<div id="muscle" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Muscles and Bones</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+				<input name="rank001" id="rank001" type="checkbox" value="abnormal bones"><label for="rank001">abnormal bones</label>
+				<input name="rank179" id="rank179" type="checkbox" value="abnormal movements"><label for="rank179">abnormal movements</label>
+				<input name="rank002" id="rank002" type="checkbox" value="abnormal muscle tone "><label for="rank002">abnormal muscle tone </label>
+				<input name="rank180" id="rank180" type="checkbox" value="abnormal posture"><label for="rank180">abnormal posture</label>
+				<input name="rank005" id="rank005" type="checkbox" value="arthritis"><label for="rank005">arthritis</label>
+				<input name="rank012" id="rank012" type="checkbox" value="bluish fingers and toes"><label for="rank012">bluish fingers and toes</label>
+				<input name="rank014" id="rank014" type="checkbox" value="bone inflammation"><label for="rank014">bone inflammation</label>
+				<input name="rank243" id="rank243" type="checkbox" value="brittle nails"><label for="rank243">brittle nails</label>
+				<input name="rank018" id="rank018" type="checkbox" value="broken bones"><label for="rank018">broken bones</label>
+				<input name="rank025" id="rank025" type="checkbox" value="coordination problems"><label for="rank025">coordination problems</label>
+				<input name="rank298" id="rank298" type="checkbox" value="decreased muscle tone"><label for="rank298">decreased muscle tone</label>
+				<input name="rank027" id="rank027" type="checkbox" value="difficulty walking"><label for="rank027">difficulty walking</label>
+				<input name="rank196" id="rank196" type="checkbox" value="extra fingers or toes"><label for="rank196">extra fingers or toes</label>
+				<input name="rank048" id="rank048" type="checkbox" value="feeling of needles"><label for="rank048">feeling of needles</label>
+				<input name="rank055" id="rank055" type="checkbox" value="foot redness"><label for="rank055">foot redness</label>
+				<input name="rank057" id="rank057" type="checkbox" value="frequent falls"><label for="rank057">frequent falls</label>
+				<input name="rank060" id="rank060" type="checkbox" value="grasp weakness"><label for="rank060">grasp weakness</label>
+				<input name="rank075" id="rank075" type="checkbox" value="inability to bend legs"><label for="rank075">inability to bend legs</label>
+				<input name="rank077" id="rank077" type="checkbox" value="inability to stand up"><label for="rank077">inability to stand up</label>
+				<input name="rank092" id="rank092" type="checkbox" value="joint redness"><label for="rank092">joint redness</label>
+				<input name="rank217" id="rank217" type="checkbox" value="joint stiffness"><label for="rank217">joint stiffness</label>
+				<input name="rank093" id="rank093" type="checkbox" value="joint swelling"><label for="rank093">joint swelling</label>
+				<input name="rank094" id="rank094" type="checkbox" value="knee instability"><label for="rank094">knee instability</label>
+				<input name="rank096" id="rank096" type="checkbox" value="knee swelling"><label for="rank096">knee swelling</label>
+				<input name="rank097" id="rank097" type="checkbox" value="knock-knees"><label for="rank097">knock-knees</label>
+				<input name="rank100" id="rank100" type="checkbox" value="leg stiffness"><label for="rank100">leg stiffness</label>
+				<input name="rank108" id="rank108" type="checkbox" value="loss of balance"><label for="rank108">loss of balance</label>
+				<input name="rank222" id="rank222" type="checkbox" value="muscle contraction"><label for="rank222">muscle contraction</label>
+				<input name="rank223" id="rank223" type="checkbox" value="muscle stiffness"><label for="rank223">muscle stiffness</label>
+				<input name="rank114" id="rank114" type="checkbox" value="muscle swelling"><label for="rank114">muscle swelling</label>
+				<input name="rank120" id="rank120" type="checkbox" value="pain in spines"><label for="rank120">pain in spines</label>
+				<input name="rank226" id="rank226" type="checkbox" value="popping sound"><label for="rank226">popping sound</label>
+				<input name="rank282" id="rank282" type="checkbox" value="short stature"><label for="rank282">short stature</label>
+				<input name="rank234" id="rank234" type="checkbox" value="slow movements"><label for="rank234">slow movements</label>
+				<input name="rank235" id="rank235" type="checkbox" value="stiff neck"><label for="rank235">stiff neck</label>
+				<input name="rank236" id="rank236" type="checkbox" value="stiffness"><label for="rank236">stiffness</label>
+				<input name="rank150" id="rank150" type="checkbox" value="stooped posture"><label for="rank150">stooped posture</label>
+				<input name="rank152" id="rank152" type="checkbox" value="swelling of ankles"><label for="rank152">swelling of ankles</label>
+				<input name="rank156" id="rank156" type="checkbox" value="swollen veins"><label for="rank156">swollen veins</label>
+				<input name="rank160" id="rank160" type="checkbox" value="tight muscles in head"><label for="rank160">tight muscles in head</label>
+				<input name="rank162" id="rank162" type="checkbox" value="toe inflammation"><label for="rank162">toe inflammation</label>
+				<input name="rank163" id="rank163" type="checkbox" value="toe lump"><label for="rank163">toe lump</label>
+				<input name="rank167" id="rank167" type="checkbox" value="unorder movements"><label for="rank167">unorder movements</label>
+		    	</fieldset>
+				</form>
+			</div>	
+		</div>
+	
+	<div id="mouth" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Mouth and Throat</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+				<input name="rank183" id="rank183" type="checkbox" value="bad breath"><label for="rank183">bad breath</label>
+				<input name="rank023" id="rank023" type="checkbox" value="chewing discomfort"><label for="rank023">chewing discomfort</label>
+				<input name="rank292" id="rank292" type="checkbox" value="difficulty swallowing"><label for="rank292">difficulty swallowing</label>
+				<input name="rank192" id="rank192" type="checkbox" value="drooling"><label for="rank192">drooling</label>
+				<input name="rank261" id="rank261" type="checkbox" value="dry mouth"><label for="rank261">dry mouth</label>
+				<input name="rank034" id="rank034" type="checkbox" value="enlarged tongue"><label for="rank034">enlarged tongue</label>
+				<input name="rank059" id="rank059" type="checkbox" value="goiter"><label for="rank059">goiter</label>
+				<input name="rank212" id="rank212" type="checkbox" value="hoarseness"><label for="rank212">hoarseness</label>
+				<input name="rank082" id="rank082" type="checkbox" value="increased salivation"><label for="rank082">increased salivation</label>
+				<input name="rank102" id="rank102" type="checkbox" value="lip cracks"><label for="rank102">lip cracks</label>
+				<input name="rank103" id="rank103" type="checkbox" value="lip flaking"><label for="rank103">lip flaking</label>
+				<input name="rank104" id="rank104" type="checkbox" value="lip smacking"><label for="rank104">lip smacking</label>
+				<input name="rank105" id="rank105" type="checkbox" value="lip sores"><label for="rank105">lip sores</label>
+				<input name="rank106" id="rank106" type="checkbox" value="lockjaw"><label for="rank106">lockjaw</label>
+				<input name="rank110" id="rank110" type="checkbox" value="metallic taste"><label for="rank110">metallic taste</label>
+				<input name="rank112" id="rank112" type="checkbox" value="mouth breathing"><label for="rank112">mouth breathing</label>
+				<input name="rank265" id="rank265" type="checkbox" value="mouth sores"><label for="rank265">mouth sores</label>
+				<input name="rank113" id="rank113" type="checkbox" value="mouth swelling"><label for="rank113">mouth swelling</label>
+				<input name="rank135" id="rank135" type="checkbox" value="red throat"><label for="rank135">red throat</label>
+				<input name="rank313" id="rank313" type="checkbox" value="sore throat"><label for="rank313">sore throat</label>
+				<input name="rank148" id="rank148" type="checkbox" value="sore tongue"><label for="rank148">sore tongue</label>
+				<input name="rank155" id="rank155" type="checkbox" value="swollen thyroid gland"><label for="rank155">swollen thyroid gland</label>
+				<input name="rank164" id="rank164" type="checkbox" value="tongue sores"><label for="rank164">tongue sores</label>
+				<input name="rank178" id="rank178" type="checkbox" value="yellow mouth"><label for="rank178">yellow mouth</label>
+				</fieldset>
+				</form>
+			</div>	
+		</div>			    					
+	
+	<div id="stomach" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Stomach Related</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>
+		    	<fieldset data-role="controlgroup">
+				<input name="rank290" id="rank290" type="checkbox" value="abdominal cramps"><label for="rank290">abdominal cramps</label>
+				<input name="rank276" id="rank276" type="checkbox" value="bloating"><label for="rank276">bloating</label>
+				<input name="rank270" id="rank270" type="checkbox" value="bowel movements pain"><label for="rank270">bowel movements pain</label>
+				<input name="rank286" id="rank286" type="checkbox" value="constipation"><label for="rank286">constipation</label>
+				<input name="rank245" id="rank245" type="checkbox" value="dehydration"><label for="rank245">dehydration</label>
+				<input name="rank033" id="rank033" type="checkbox" value="enlarged abdomen"><label for="rank033">enlarged abdomen</label>
+				<input name="rank262" id="rank262" type="checkbox" value="feeling of fullness"><label for="rank262">feeling of fullness</label>
+				<input name="rank050" id="rank050" type="checkbox" value="feeling thirsty"><label for="rank050">feeling thirsty</label>
+				<input name="rank051" id="rank051" type="checkbox" value="fewer bowel movements"><label for="rank051">fewer bowel movements</label>
+				<input name="rank205" id="rank205" type="checkbox" value="frequent bowel movement"><label for="rank205">frequent bowel movement</label>
+				<input name="rank207" id="rank207" type="checkbox" value="gas"><label for="rank207">gas</label>
+				<input name="rank063" id="rank063" type="checkbox" value="hard, dry stools"><label for="rank063">hard, dry stools</label>
+				<input name="rank083" id="rank083" type="checkbox" value="indigestion"><label for="rank083">indigestion</label>
+				<input name="rank121" id="rank121" type="checkbox" value="pale stools"><label for="rank121">pale stools</label>
+				<input name="rank132" id="rank132" type="checkbox" value="rectal blockage"><label for="rank132">rectal blockage</label>
+				<input name="rank149" id="rank149" type="checkbox" value="stools with worms"><label for="rank149">stools with worms</label>
+			</fieldset>
+			</form>
+			</div>	
+		</div>
+	
+	<div id="earnose" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Ears and Nose</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>				
+		    	<fieldset data-role="controlgroup">
+					<input name="rank029" id="rank029" type="checkbox" value="ear bleeding"><label for="rank029">ear bleeding</label>
+					<input name="rank030" id="rank030" type="checkbox" value="ear pressure"><label for="rank030">ear pressure</label>
+					<input name="rank031" id="rank031" type="checkbox" value="ear ringing"><label for="rank031">ear ringing</label>
+					<input name="rank206" id="rank206" type="checkbox" value="fullness in the ear"><label for="rank206">fullness in the ear</label>
+					<input name="rank064" id="rank064" type="checkbox" value="hearing frequent noises"><label for="rank064">hearing frequent noises</label>
+					<input name="rank280" id="rank280" type="checkbox" value="hearing loss"><label for="rank280">hearing loss</label>
+					<input name="rank109" id="rank109" type="checkbox" value="loss of smell"><label for="rank109">loss of smell</label>
+					<input name="rank115" id="rank115" type="checkbox" value="nasal allergy"><label for="rank115">nasal allergy</label>
+					<input name="rank252" id="rank252" type="checkbox" value="nasal congestion"><label for="rank252">nasal congestion</label>
+					<input name="rank266" id="rank266" type="checkbox" value="nose bleeds"><label for="rank266">nose bleeds</label>
+					<input name="rank289" id="rank289" type="checkbox" value="runny nose"><label for="rank289">runny nose</label>
+					<input name="rank230" id="rank230" type="checkbox" value="sinusitis"><label for="rank230">sinusitis</label>
+					<input name="rank256" id="rank256" type="checkbox" value="sneezing"><label for="rank256">sneezing</label>
+				</fieldset>
+			</form>
+			</div>	
+		</div>	
+	
+	<div id="body" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Body Conditions</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>				
+		    	<fieldset data-role="controlgroup">
+				<input name="rank004" id="rank004" type="checkbox" value="aging"><label for="rank004">aging</label>
+				<input name="rank285" id="rank285" type="checkbox" value="burning sensation"><label for="rank285">burning sensation</label>
+				<input name="rank287" id="rank287" type="checkbox" value="dizziness"><label for="rank287">dizziness</label>
+				<input name="rank037" id="rank037" type="checkbox" value="exhaustion"><label for="rank037">exhaustion</label>
+				<input name="rank201" id="rank201" type="checkbox" value="fainting"><label for="rank201">fainting</label>
+				<input name="rank066" id="rank066" type="checkbox" value="heat intolerance"><label for="rank066">heat intolerance</label>
+				<input name="rank068" id="rank068" type="checkbox" value="height loss"><label for="rank068">height loss</label>
+				<input name="rank213" id="rank213" type="checkbox" value="hyperactivity"><label for="rank213">hyperactivity</label>
+				<input name="rank071" id="rank071" type="checkbox" value="hypothermia"><label for="rank071">hypothermia</label>
+				<input name="rank080" id="rank080" type="checkbox" value="increase in temperature"><label for="rank080">increase in temperature</label>
+				<input name="rank081" id="rank081" type="checkbox" value="increased energy"><label for="rank081">increased energy</label>
+				<input name="rank219" id="rank219" type="checkbox" value="lightheadedness"><label for="rank219">lightheadedness</label>
+				<input name="rank107" id="rank107" type="checkbox" value="loss of alertness"><label for="rank107">loss of alertness</label>
+				<input name="rank220" id="rank220" type="checkbox" value="loss of sensation"><label for="rank220">loss of sensation</label>
+				<input name="rank111" id="rank111" type="checkbox" value="mixed episode"><label for="rank111">mixed episode</label>
+				<input name="rank118" id="rank118" type="checkbox" value="overactive"><label for="rank118">overactive</label>
+				<input name="rank253" id="rank253" type="checkbox" value="paralysis"><label for="rank253">paralysis</label>
+				<input name="rank125" id="rank125" type="checkbox" value="poor coordination"><label for="rank125">poor coordination</label>
+				<input name="rank136" id="rank136" type="checkbox" value="restlessness"><label for="rank136">restlessness</label>
+				<input name="rank294" id="rank294" type="checkbox" value="seizures"><label for="rank294">seizures</label>
+				<input name="rank140" id="rank140" type="checkbox" value="shivering"><label for="rank140">shivering</label>
+				<input name="rank229" id="rank229" type="checkbox" value="shock"><label for="rank229">shock</label>
+				<input name="rank151" id="rank151" type="checkbox" value="strange sensation"><label for="rank151">strange sensation</label>
+				<input name="rank161" id="rank161" type="checkbox" value="tiredness"><label for="rank161">tiredness</label>
+				<input name="rank170" id="rank170" type="checkbox" value="violent shaking"><label for="rank170">violent shaking</label>
+				<input name="rank173" id="rank173" type="checkbox" value="weight gain"><label for="rank173">weight gain</label>
+				<input name="rank318" id="rank318" type="checkbox" value="weight loss"><label for="rank318">weight loss</label>
+		    	</fieldset>
+			</form>
+			</div>	
+		</div>
+
+	<div id="teeth" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Teeth</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>				
+		    	<fieldset data-role="controlgroup">
+					<input name="rank257" id="rank257" type="checkbox" value="bleeding gums"><label for="rank257">bleeding gums</label>
+					<input name="rank021" id="rank021" type="checkbox" value="cavities"><label for="rank021">cavities</label>
+					<input name="rank070" id="rank070" type="checkbox" value="holes in teeth"><label for="rank070">holes in teeth</label>
+					<input name="rank073" id="rank073" type="checkbox" value="improper alignment of the teeth"><label for="rank073">improper alignment of the teeth</label>
+					<input name="rank134" id="rank134" type="checkbox" value="red gums"><label for="rank134">red gums</label>
+					<input name="rank238" id="rank238" type="checkbox" value="swollen gums"><label for="rank238">swollen gums</label>
+					<input name="rank158" id="rank158" type="checkbox" value="tender gums"><label for="rank158">tender gums</label>
+					<input name="rank240" id="rank240" type="checkbox" value="toothache"><label for="rank240">toothache</label>
+					</fieldset>
+			</form>
+			</div>	
+		</div>
+	
+	<div id="sleep" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Sleeping Related</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>				
+		    	<fieldset data-role="controlgroup">	
+				<input name="rank026" id="rank026" type="checkbox" value="co-sleeping"><label for="rank026">co-sleeping</label>
+				<input name="rank244" id="rank244" type="checkbox" value="daytime sleepiness"><label for="rank244">daytime sleepiness</label>
+				<input name="rank299" id="rank299" type="checkbox" value="difficulty sleeping"><label for="rank299">difficulty sleeping</label>
+				<input name="rank193" id="rank193" type="checkbox" value="drowsiness"><label for="rank193">drowsiness</label>
+				<input name="rank250" id="rank250" type="checkbox" value="irregular sleep pattern"><label for="rank250">irregular sleep pattern</label>
+				<input name="rank232" id="rank232" type="checkbox" value="sleep disturbance"><label for="rank232">sleep disturbance</label>
+				<input name="rank144" id="rank144" type="checkbox" value="sleeping on stomach"><label for="rank144">sleeping on stomach</label>
+				<input name="rank146" id="rank146" type="checkbox" value="snoring"><label for="rank146">snoring</label>
+			</fieldset>
+			</form>
+			</div>	
+		</div>
+	
+	<div id="learning" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Learning and Mental</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>				
+		    	<fieldset data-role="controlgroup">
+				<input name="rank007" id="rank007" type="checkbox" value="autism"><label for="rank007">autism</label>
+				<input name="rank186" id="rank186" type="checkbox" value="communication problems"><label for="rank186">communication problems</label>
+				<input name="rank278" id="rank278" type="checkbox" value="confusion"><label for="rank278">confusion</label>
+				<input name="rank188" id="rank188" type="checkbox" value="delayed learning"><label for="rank188">delayed learning</label>
+				<input name="rank259" id="rank259" type="checkbox" value="difficulty concentrating"><label for="rank259">difficulty concentrating</label>
+				<input name="rank191" id="rank191" type="checkbox" value="disorientation"><label for="rank191">disorientation</label>
+				<input name="rank204" id="rank204" type="checkbox" value="forgetfulness"><label for="rank204">forgetfulness</label>
+				<input name="rank209" id="rank209" type="checkbox" value="hallucinations"><label for="rank209">hallucinations</label>
+				<input name="rank076" id="rank076" type="checkbox" value="inability to remember"><label for="rank076">inability to remember</label>
+				<input name="rank087" id="rank087" type="checkbox" value="intellectual disability"><label for="rank087">intellectual disability</label>
+				<input name="rank098" id="rank098" type="checkbox" value="learning disorders"><label for="rank098">learning disorders</label>
+				<input name="rank273" id="rank273" type="checkbox" value="memory loss"><label for="rank273">memory loss</label>
+				<input name="rank251" id="rank251" type="checkbox" value="mental retardation"><label for="rank251">mental retardation</label>
+				<input name="rank139" id="rank139" type="checkbox" value="seeing words in reverse"><label for="rank139">seeing words in reverse</label>
+				<input name="rank233" id="rank233" type="checkbox" value="slow learning capabilities"><label for="rank233">slow learning capabilities</label>
+				<input name="rank147" id="rank147" type="checkbox" value="social problem"><label for="rank147">social problem</label>
+				<input name="rank308" id="rank308" type="checkbox" value="speech problems"><label for="rank308">speech problems</label>
+				<input name="rank166" id="rank166" type="checkbox" value="unconsciousness"><label for="rank166">unconsciousness</label>
+				<input name="rank169" id="rank169" type="checkbox" value="unusual talkativeness"><label for="rank169">unusual talkativeness</label>
+				<input name="rank171" id="rank171" type="checkbox" value="wandering"><label for="rank171">wandering</label>
+			</fieldset>
+			</form>
+			</div>	
+		</div>	
+	
+	<div id="behavior" data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b">	
+			<a href="#analyzer" data-role="button" data-icon="arrow-l"
+				class="home-btn" data-transition="slide">Back</a>
+			<h1>Behaviors</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<form>				
+		    	<fieldset data-role="controlgroup">
+				<input name="rank181" id="rank181" type="checkbox" value="anxious and aggressive"><label for="rank181">anxious and aggressive</label>
+				<input name="rank291" id="rank291" type="checkbox" value="depression"><label for="rank291">depression</label>
+				<input name="rank038" id="rank038" type="checkbox" value="extreme sensitivity "><label for="rank038">extreme sensitivity </label>
+				<input name="rank203" id="rank203" type="checkbox" value="flat mood"><label for="rank203">flat mood</label>
+				<input name="rank215" id="rank215" type="checkbox" value="impulsive behavior"><label for="rank215">impulsive behavior</label>
+				<input name="rank264" id="rank264" type="checkbox" value="inattentiveness"><label for="rank264">inattentiveness</label>
+				<input name="rank086" id="rank086" type="checkbox" value="insensitivity"><label for="rank086">insensitivity</label>
+				<input name="rank288" id="rank288" type="checkbox" value="irritability"><label for="rank288">irritability</label>
+				<input name="rank237" id="rank237" type="checkbox" value="stress"><label for="rank237">stress</label>
+			</fieldset>
+			</form>
+			</div>	
+		</div>		
+		    		    				
+		    						    	
+		    	
 	<div id="details-page" data-role="page" data-theme-"b">
 		<div data-role="header" data-theme="b">
 		<a href="#result-list" data-role="button" data-icon="arrow-l"
