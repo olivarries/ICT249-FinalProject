@@ -64,7 +64,7 @@
 		<div data-role="content" >
 			
 			<div data-role="fieldcontain">
-				<label for="search-basic">Search Sickness:</label><input type="text"
+				<label for="search-basic">Search Sickness or Condition:</label><input type="search"
 					name="search" id="query" value="Cough" />
 			</div>
 
@@ -82,7 +82,7 @@
 		<div data-role="footer" data-theme="b" data-position="fixed">
 			<div data-role="navbar"  role="navigation">
 				<ul>
-					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide">Analyze</a></li>
+					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide" id="analyze-nav">Analyze</a></li>
 					<li><a href="#search" data-theme="b" data-icon="search" class="ui-btn-active" data-transition="slide">Search</a></li>
 					<li><a href="#about" data-theme="b" data-icon="info" data-transition="slide">About Us</a></li>
 				</ul>
@@ -107,7 +107,7 @@
 		<div data-role="footer" data-theme="b" data-position="fixed">
 			<div data-role="navbar"  role="navigation">
 				<ul>
-					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide">Analyze</a></li>
+					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide" id="analyze-nav">Analyze</a></li>
 					<li><a href="#home" data-theme="b" data-icon="search" data-transition="slide">Search</a></li>
 					<li><a href="#about" data-theme="b" data-icon="info" data-transition="slide">About Us</a></li>
 				</ul>
@@ -124,7 +124,7 @@
 <div data-role="content">			
 		<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="b" data-count-theme="b">
 		    <li data-role="list-divider">Select Signs and Symptoms</li>
-		    <li><a href="#common" data-transition="slide">Common Symptoms <span class="ui-li-count">16</span></a></li>
+		    <li><a href="#common" data-transition="slide">Common <span class="ui-li-count">16</span></a></li>
 		    <li><a href="#pain" data-transition="slide">Pains <span class="ui-li-count">28</span></a></li>
 		    <li><a href="#blood" data-transition="slide">With Blood <span class="ui-li-count">7</span></a></li>
 		    <li><a href="#heart" data-transition="slide">Heart Related<span class="ui-li-count">11</span></a></li>
@@ -142,7 +142,7 @@
 		    <li><a href="#teeth" data-transition="slide">Teeth <span class="ui-li-count">8</span></a></li>
 		    <li><a href="#sleep" data-transition="slide">Sleep Related <span class="ui-li-count">8</span></a></li>
 		    <li><a href="#behavior" data-transition="slide">Behavior <span class="ui-li-count">8</span></a></li>
-		    <li><a href="#learning" data-transition="slide">Learning and Mental Conditions <span class="ui-li-count">20</span></a></li>				    
+		    <li><a href="#learning" data-transition="slide">Mental and Learning <span class="ui-li-count">20</span></a></li>				    
 		</ul>
 		
 	</div>
@@ -165,7 +165,7 @@
 			<h1>Common Symptoms</h1>
 		</div>
 			
-		<div data-role="content" data-theme="d">											
+		<div data-role="content" data-theme="d" id="common1">											
 			<form>										
 		    	<fieldset data-role="controlgroup">										
 			        <legend>Select Signs and Symptoms:</legend>										
@@ -789,7 +789,7 @@
 			<h1>Information</h1>
 		</div>
 		
-		<div data-role="content" data-theme="b">
+		<div data-role="content" id="content" data-theme="b">
 			<div id="name"></div>
 			<div id="category"></div>
 			<div id="info"></div>
@@ -801,12 +801,12 @@
 				<a href="" data-role="button" id="addFave">Add Item</a>
 				<a href="" data-role="button" id="removeFave">Remove Item</a>
 				
-		</div>
+			</div>
 		
 		<div data-role="footer" data-theme="b" data-position="fixed">
 			<div data-role="navbar"  role="navigation">
 				<ul>
-					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide">Analyze</a></li>
+					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide" id="analyze-nav">Analyze</a></li>
 					<li><a href="#home" data-theme="b" data-icon="search" data-transition="slide">Search</a></li>
 					<li><a href="#about" data-theme="b" data-icon="info" data-transition="slide">About Us</a></li>
 				</ul>
@@ -824,7 +824,7 @@
 			<div data-role="collapsible">
    				 <h3>Information</h3>
 				<p align="justify">Sickness Analyzer Mobile (SAM) is a mobile application that enables user determine the exact or the probable kind of disease  or sickness experienced by a patient. 
-				We encourage the user to visit the medical page link and get the full information about the disease(s). 
+				We encourage user to visit the medical page link and get the full information about the disease(s). 
 				 </p>
 			</div>
 			
@@ -848,7 +848,7 @@
 		<div data-role="footer" data-theme="b" data-position="fixed">
 			<div data-role="navbar"  role="navigation">
 				<ul>
-					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide">Analyze</a></li>
+					<li><a href="#analyzer" data-theme="b" data-icon="grid" data-transition="slide" id="analyze-nav">Analyze</a></li>
 					<li><a href="#home" data-theme="b" data-icon="search" data-transition="slide">Search</a></li>
 					<li><a href="#about" data-theme="b" data-icon="info" class="ui-btn-active" data-transition="slide">About Us</a></li>
 				</ul>
